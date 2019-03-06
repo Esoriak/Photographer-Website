@@ -1,0 +1,53 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.landing-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/images/mohamed-nohassi-175530-unsplash.jpg") center center;
+    background-size: cover;
+}
+
+.cover-socials img {
+    height: 2em;
+    margin: 0.5em;
+}
+
+.cover-wrap-content {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-arrow {
+    margin-top: auto;
+    margin-bottom: 1em;
+    position: relative;
+    animation-name: down;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+  }
+
+.down-arrow:hover {
+    animation-name: down;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+/* Animation down arrow */
+@keyframes down {
+    from {
+        bottom: 0px;
+        top: 0px;
+    }
+    100% {
+        opacity: 0.8;
+        top: 12px;
+    }
+}
