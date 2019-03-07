@@ -55,3 +55,59 @@ html {
 #flux {
     padding-top: 50px;
 }
+.card {
+    width: 35vw;
+}
+.workshops {
+    margin-left: 5%;
+}
+/* modal 1 */
+.intro {
+    padding-left:3%;
+    padding-right:3%;
+    text-align:justify;
+    font-style:italic;
+}
+.adress {
+    text-align: center;
+}
+.dates { 
+    margin-left: 30%;
+    width: 25%;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 3px 3px 3px 3px;
+}
+
+
+
+/* modal 2 */
+.modal-title {
+    text-align: center;
+    text-shadow: 3px 3px 3px cyan;
+}
+
+.enfant_mouche {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    border: 1px solid black;
+    box-shadow: 0 0 2px 2px black;
+}
+.text-infos {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+}
+.example {
+    display :flex;
+    flex-direction: row;
+}
+.title {
+    font-size:2em;
+}
+.text-production {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+}
