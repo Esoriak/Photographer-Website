@@ -3,53 +3,100 @@
 <html lang="fr">
 
 <head>
-	<title>Abdel Karim Website</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="Abdel official website">
-	<meta name="author" content="Tic Tac & Co.">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Abdel Karim - Photographe</title>
+
+	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Custom styles for this template -->
+	<link href="styles/style.css" rel="stylesheet">
+
+	<!-- FontAwesome css -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<!-- Theme BootStrap -->
+	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.css">
+
 </head>
+
 
 <body>
 	<!-- Header -->
 	<header>
 
-		<!-- Navigation -->
-		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">Abdel Kharim</a>
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-					data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="about.html">Accueil</a>
-						</li>
-						<li class="nav-item active dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Portfolio
-							</a>
-							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-								<a class="dropdown-item active" href="voyage.html">Voyages</a>
-								<a class="dropdown-item" href="noiretblanc.html">Noir et Blanc</a>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
-						</li>
-					</ul>
+		<!-- Navigation 1-->
+		<section class="hide-nav1">
+			<nav class="navbar navbar-dark bg-primary fixed-top navbar-expand-md">
+				<div class="container">
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar"
+						aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> ☰
+					</button>
+					<div id="navbar" class="navbar-collapse collapse">
+						<section class="taillepolice">
+							<a class="navbar-brand" href="index.html"><em><span>L</span>a création est la naissance de
+									quelque chose. . .
+								</em></a>
+						</section>
+						<ul class="nav navbar-nav ml-auto">
+							<a href="https://www.instagram.com/?hl=fr" target="_blank" class="nav-link"><i
+									class="fa fa-camera-retro fa-lg"></i></a>
+							<li>
+								<a href="https://twitter.com/login?lang=fr" target="_blank" class="nav-link"><i
+										class="fab fa-twitter fa-lg"></i></a>
+							<li>
+								<a href="https://www.pinterest.fr/" target="_blank" class="nav-link"><i
+										class="fab fa-pinterest fa-lg"></i></a>
+							</li>
+						</ul>
+					</div>
+					<!--/.nav-collapse -->
 				</div>
-			</div>
-		</nav>
+			</nav>
+		</section>
+
+		<!-- Navigation 2 -->
+		<section class="padding-nav2">
+			<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+				<div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+					<a class="navbar-brand" href="index.html">Abdel Kharim </a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse text-center" id="navbarsExample11">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Accueil</a>
+							</li>
+							<li class="nav-item active dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Portfolio
+								</a>
+								<div class="dropdown-menu dropdown-menu-right"
+									aria-labelledby="navbarDropdownPortfolio">
+									<a class="dropdown-item active" href="voyage.html">Voyages</a>
+									<a class="dropdown-item" href="../portfolioNoiretBlanc/noiretblanc.html">Noir et
+										Blanc</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</section>
+
 	</header>
 
 	<main>
@@ -74,12 +121,15 @@
 
 		<!-- Flux -->
 		<section id="flux">
-			<div class="container d-flex flex-row justify-content-between">
+			<div class="container">
+				<h2 class="text-center mb-5">Evènements</h2>
+			</div>
+			<div class="container d-flex flex-column flex-lg-row">
 				<!-- ## card1-->
-				<div class="exhibition card border border border-secondary">
-					<a href="https://www.bloggif.com/" title="alcool2"><img class="rounded float-center img-fluid"
-							src="https://data.bloggif.com/distant/user/store/e/4/5/b/49274eadd8005f6aee249ddd16b4b54e.jpeg"
-							alt="alcool2"></a>
+				<div class="flux-box border border border-secondary align-self-center">
+					<img class="float-center img-fluid"
+						src="https://data.bloggif.com/distant/user/store/e/4/5/b/49274eadd8005f6aee249ddd16b4b54e.jpeg"
+						alt="alcool2">
 					<div class="card-body">
 						<h5 class="card-title">EXPOSITION A VENIR</h5>
 						<p class="card-text"> Vendredi 26 Mars - Dimanche 28 Mars <br />
@@ -92,16 +142,13 @@
 					</div>
 				</div>
 
-				<div class="workshops d-flex flex-column justify-content-between flex-grow-1">
+				<div class="flux-box workshops d-flex flex-column justify-content-between">
 					<!-- ## card2 -->
-					<div class="card2 card mb-3">
+					<div class="card2 card">
 						<div class="row no-gutters">
 							<div class="col-md-4">
-								<a href='https://www.casimages.com/i/190305050007753471.jpg.html'
-									title='Enfantmouchemin' target='_blank'><img
-										src='https://nsa40.casimages.com/img/2019/03/05/mini_190305050007753471.jpg'
-										border='0' alt='Enfantmouchemin' class="card-img img-fluid" />
-								</a>
+								<img src='https://nsa40.casimages.com/img/2019/03/05/mini_190305050007753471.jpg'
+									border='0' alt='Enfantmouchemin' class="card-img img-fluid">
 							</div>
 							<div class="col-md-8">
 								<div class="card-body">
@@ -117,169 +164,189 @@
 						</div>
 					</div>
 					<!-- ## card3 -->
-					<div class="card3 card mb-3">
+					<div class="card3 card">
 						<div class="row no-gutters">
 							<div class="col-md-8">
 								<div class="card-body">
 									<h5 class="card-title">MASTERCLASS</h5>
-									<p class="card-text">Participez à une materclass sur la photo. Toujours dans cet optique de partage
+									<p class="card-text">Participez à une materclass sur la photo. Toujours dans cet
+										optique de partage
 										aucune participation n'est demandée. Pensez simplement à reservez !</p>
-									<button type="button" class="btn btn-info" data-toggle="modal" data-target=".example-modal-xl">Plus
+									<button type="button" class="btn btn-info" data-toggle="modal"
+										data-target=".example-modal-xl">Plus
 										d'infos sur la masterclass</button>
 								</div>
 							</div>
 							<div class="col-md-4">
-								<a href="https://en.bloggif.com/" title="Photo"><img class="card-img img-fluid"
-										src="/images/fachy-marin-1401994-unsplash.jpg"
-										alt="auditorium"></a>
+								<img src="/images/fachy-marin-1401994-unsplash.jpg" class="card-img img-fluid"
+									alt="auditorium">
 							</div>
 						</div>
 					</div>
 
-				<!-- ### MODAL 1 ### -->
-				<!-- Extra large modal -->
+					<!-- ### MODAL 1 ### -->
+					<!-- Extra large modal -->
 
-				<div class="modal fade expo-alcool-modal-xl" tabindex="-1" role="dialog"
-					aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-xl">
-						<div class="modal-content info">
-							<h2 class="modal-title"> EXPOSITION A VENIR </h2>
+					<div class="modal fade expo-alcool-modal-xl" tabindex="-1" role="dialog"
+						aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-xl">
+							<div class="modal-content info">
+								<h2 class="modal-title"> EXPOSITION A VENIR </h2>
 
-							<p class="intro"> Quel parisien n'a pas un jour bu à outrance dans les sous-sol d'un bar ?
-								Quelle parisienne n'a pas participer à un blind test en prenant une pinte ?
-								Avez-vous déjà fait une soirée apéro avec vos ami.e.s autour d'un verre de vin et d'un
-								plateau de saucisson en terrasse ? Vous avez déjà oublier votre téléphone
-								au bar ou regarder un match de foot sur une chaise bancale en criant toujours plus fort
-								que le voisin ?
-								Vous connaissez cette-heure de la nuit où les cigarettes s'enfilent devant le bar au
-								même rythme que s'égrainent shooters et coktails ?
-								On a tous une histoire de bar dans nos mémoires, et on à tous une soirée dont on ne se
-								rappelle que vaguement.
-								Si un jour vous avez été Sam, vous avez vu tout ça d'un point de vue extérieur, et ça
-								devait être encore plus drôle (quoi que ?!).
-								Je me suis mis à la place de ce Sam qui voit l'état de ses amis se détériorer au fil des
-								heures, au fil des verres. J'ai vu des situations comiques,
-								des situations cocasses, inquiétantes, j'ai immortalisé des soirées entières à
-								philosopher, à boire trop, à rire tant qu'on veut et à boire tant qu'on peut.
-								Vous pourrez en voir un reportage photo qui sera exposé au bar "L'inévitable " qui me
-								fait l'honneur d'accueillir une vingtaine de portraits.
-								Ne ratez pas ce rendez-vous, cela ne durera que 3 jours.
-								Je serais ravi d'échanger avec vous autour de cette thématique ( et d'un bon verre) !
-								Au plaisir de partager ma passion avec le plus grand nombre, à très bientot.<br />
+								<p class="intro"> Quel parisien n'a pas un jour bu à outrance dans les sous-sol d'un bar
+									?
+									Quelle parisienne n'a pas participer à un blind test en prenant une pinte ?
+									Avez-vous déjà fait une soirée apéro avec vos ami.e.s autour d'un verre de vin et
+									d'un
+									plateau de saucisson en terrasse ? Vous avez déjà oublier votre téléphone
+									au bar ou regarder un match de foot sur une chaise bancale en criant toujours plus
+									fort
+									que le voisin ?
+									Vous connaissez cette-heure de la nuit où les cigarettes s'enfilent devant le bar au
+									même rythme que s'égrainent shooters et coktails ?
+									On a tous une histoire de bar dans nos mémoires, et on à tous une soirée dont on ne
+									se
+									rappelle que vaguement.
+									Si un jour vous avez été Sam, vous avez vu tout ça d'un point de vue extérieur, et
+									ça
+									devait être encore plus drôle (quoi que ?!).
+									Je me suis mis à la place de ce Sam qui voit l'état de ses amis se détériorer au fil
+									des
+									heures, au fil des verres. J'ai vu des situations comiques,
+									des situations cocasses, inquiétantes, j'ai immortalisé des soirées entières à
+									philosopher, à boire trop, à rire tant qu'on veut et à boire tant qu'on peut.
+									Vous pourrez en voir un reportage photo qui sera exposé au bar "L'inévitable " qui
+									me
+									fait l'honneur d'accueillir une vingtaine de portraits.
+									Ne ratez pas ce rendez-vous, cela ne durera que 3 jours.
+									Je serais ravi d'échanger avec vous autour de cette thématique ( et d'un bon verre)
+									!
+									Au plaisir de partager ma passion avec le plus grand nombre, à très bientot.<br />
 
 
-							</p>
-							<p class="dates"> <span class="adress">12 rue l'inné - 75005 PARIS </span> <br />
-								Vendredi 26 Mars - Dimanche 28 Mars <br />
-								De 16h à minuit.<br />
-								Happy hours de 18h30 à 21h</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- #### MODAL 2 ### -->
-
-				<div class="modal fade storytelling-modal-xl" tabindex="-1" role="dialog"
-					aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-xl">
-						<div class="modal-content">
-							<h2 class="modal-title"> ATELIER STORYTELLING</h2>
-
-							<p class="text-infos"> Je vous invite à participer à un atelier d'écriture qui aura lieu
-								dans
-								l'espace Angela Davis de la grande bibliothèque de Paris
-								le mercredi 6 avril dés 14h. Lorsque vous arriverez sur les lieux vous pourrez choisir
-								parmi
-								une quinzaine de photos exposées et vous aurez
-								plusieurs heures pour produire un texte. Chacun lira ensuite sa production et nous
-								pourrons
-								tous en discuter autour d'un apero dinatoire
-								qui vous est offert à la fin de l'atelier. Chaque photo ouvre des portes sur un monde
-								différent et vous serez surpris de voir le nombre
-								d'interprétations possible d'une seule et même scène.
-								Vous pouvez obtenir plus d'informations en contactant Mme Palis qui animera cet atelier
-								et
-								vous pouvez voir l'exemple d'un production ci dessous.
-							</p>
-							<div class="example">
-								<a class="enfant_mouche" href="https://www.bloggif.com/" title="Photo"><img
-										src="https://data.bloggif.com/distant/user/store/2/3/6/f/7f84a9b63ee634011c46c823cc43f632.jpeg"
-										alt="enfant_mouche"></a>
-
-								<p class="text-production"> <span class="title"> L'Enfant-mouche</span><br />
-									Un petit corps frêle  à arrêter de se mouvoir l’espace d’un
-									déclic.<br />
-									Les bras croisés, l’œil provocant, l’enfant nous parle, et sourit. De ses yeux si
-									noirs,
-									elle lance un appel d’espoir.<br />
-									Une mouche audacieuse s’est posée sur sa peau mate. Ses yeux attentifs à l’objectif
-									ne
-									virent pas l’étonnante intrusion. Son épiderme habitué ne s’est pas défendu. Mais
-									l’œil
-									impitoyable à vu, et s’en souvient.<br />
-									 Alors que la mouche venimeuse s’envole avec un morceau de petite fille, l’enfance à
-									été
-									immortalisée. Sertie d’un vêtement de coton sale où les rayures blanches et bleues
-									sont
-									autant d’épreuves à dépassées que d’espoir à sauvegarder.<br />
-									Ce tee-shirt, maculé de terre sèche,  deviendra trop petit lorsqu’elle aura pris son
-									envol,
-									l’enfant-mouche.<br />
-									Lorsque tu t’en vas, avec, dans ta mémoire et celle de l’appareil photo, son visage
-									déjà
-									marqué, elle s’élance, elle et son regard, profondeur des abysses. Les méandres de
-									ses
-									souvenirs seront à l’image de ses cheveux libérés.<br />
-									Une mèche en épousera une autre, mais sous ce paysage brulant, elles ne disposeront
-									que
-									de quelques moments, avant de s’éparpiller au vent. <br />
-									Chaud le courant d’air arrogant, qui ne laissera pas grandir l’enfant comme elle le
-									mérite, sous ce
-									soleil ardent qui irrite.<br />
-									L’homme blanc  n’est pas méchant, il veut juste se souvenir de toi. Il déposera dans
-									un
-									écrin de soie, sans le savoir, une enfant-mouche en émoi. </p>
+								</p>
+								<p class="dates"> <span class="adress">12 rue l'inné - 75005 PARIS </span> <br />
+									Vendredi 26 Mars - Dimanche 28 Mars <br />
+									De 16h à minuit.<br />
+									Happy hours de 18h30 à 21h</p>
 							</div>
 						</div>
 					</div>
-				</div>
 
-			</div>
+					<!-- #### MODAL 2 ### -->
+
+					<div class="modal fade storytelling-modal-xl" tabindex="-1" role="dialog"
+						aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-xl">
+							<div class="modal-content">
+								<h2 class="modal-title"> ATELIER STORYTELLING</h2>
+
+								<p class="text-infos"> Je vous invite à participer à un atelier d'écriture qui aura lieu
+									dans
+									l'espace Angela Davis de la grande bibliothèque de Paris
+									le mercredi 6 avril dés 14h. Lorsque vous arriverez sur les lieux vous pourrez
+									choisir
+									parmi
+									une quinzaine de photos exposées et vous aurez
+									plusieurs heures pour produire un texte. Chacun lira ensuite sa production et nous
+									pourrons
+									tous en discuter autour d'un apero dinatoire
+									qui vous est offert à la fin de l'atelier. Chaque photo ouvre des portes sur un
+									monde
+									différent et vous serez surpris de voir le nombre
+									d'interprétations possible d'une seule et même scène.
+									Vous pouvez obtenir plus d'informations en contactant Mme Palis qui animera cet
+									atelier
+									et
+									vous pouvez voir l'exemple d'un production ci dessous.
+								</p>
+								<div class="example">
+									<a class="enfant_mouche" href="https://www.bloggif.com/" title="Photo"><img
+											src="https://data.bloggif.com/distant/user/store/2/3/6/f/7f84a9b63ee634011c46c823cc43f632.jpeg"
+											alt="enfant_mouche"></a>
+
+									<p class="text-production"> <span class="title"> L'Enfant-mouche</span><br />
+										Un petit corps frêle  à arrêter de se mouvoir l’espace d’un
+										déclic.<br />
+										Les bras croisés, l’œil provocant, l’enfant nous parle, et sourit. De ses yeux
+										si
+										noirs,
+										elle lance un appel d’espoir.<br />
+										Une mouche audacieuse s’est posée sur sa peau mate. Ses yeux attentifs à
+										l’objectif
+										ne
+										virent pas l’étonnante intrusion. Son épiderme habitué ne s’est pas défendu.
+										Mais
+										l’œil
+										impitoyable à vu, et s’en souvient.<br />
+										 Alors que la mouche venimeuse s’envole avec un morceau de petite fille,
+										l’enfance à
+										été
+										immortalisée. Sertie d’un vêtement de coton sale où les rayures blanches et
+										bleues
+										sont
+										autant d’épreuves à dépassées que d’espoir à sauvegarder.<br />
+										Ce tee-shirt, maculé de terre sèche,  deviendra trop petit lorsqu’elle aura pris
+										son
+										envol,
+										l’enfant-mouche.<br />
+										Lorsque tu t’en vas, avec, dans ta mémoire et celle de l’appareil photo, son
+										visage
+										déjà
+										marqué, elle s’élance, elle et son regard, profondeur des abysses. Les méandres
+										de
+										ses
+										souvenirs seront à l’image de ses cheveux libérés.<br />
+										Une mèche en épousera une autre, mais sous ce paysage brulant, elles ne
+										disposeront
+										que
+										de quelques moments, avant de s’éparpiller au vent. <br />
+										Chaud le courant d’air arrogant, qui ne laissera pas grandir l’enfant comme elle
+										le
+										mérite, sous ce
+										soleil ardent qui irrite.<br />
+										L’homme blanc  n’est pas méchant, il veut juste se souvenir de toi. Il déposera
+										dans
+										un
+										écrin de soie, sans le savoir, une enfant-mouche en émoi. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
 		</section>
 
 		<!-- Gallery -->
 		<section id="gallery">
-			<div class="gallery-grid container-fluid">
-				<a href="https://www.bloggif.com/" title="Photo"><img
-						src="https://data.bloggif.com/distant/user/store/6/5/b/0/7cc06842824530850e1ff60b3ec50b56.jpeg"
-						alt="man_crying"></a>
-				<a href="https://www.bloggif.com/" title="Photo"><img
-						src="https://data.bloggif.com/distant/user/store/8/b/1/3/e4e066192b4e1588f981c450fd7431b8.jpeg"
-						alt="landscape_monia"></a>
-				<a href="https://www.bloggif.com/" title="Photo"><img
-						src="https://data.bloggif.com/distant/user/store/1/1/f/d/361cd18f9730374efbde4fcc0494df11.jpeg"
-						alt="funny_man"></a>
-				<a href="https://www.bloggif.com/" title="Photo"><img
-						src="https://data.bloggif.com/distant/user/store/c/b/f/e/978efbea3af3d7c76369cc6171eaefbc.jpeg"
-						alt="bear_monia"></a>
-				<a href="https://www.bloggif.com/" title="Photo"><img
-						src="https://data.bloggif.com/distant/user/store/a/0/d/b/60b83ac265b684c86d0870c6148ebd0a.jpeg"
-						alt="children"></a>
-				<a href="https://www.bloggif.com/" title="Photo"><img
-						src="https://data.bloggif.com/distant/user/store/7/c/0/d/03b526b30056493e61e43a4393a7d0c7.jpeg"
-						alt="husband_monia"></a>
-				<a href="https://www.bloggif.com/" title="Photo"><img
-						src="https://data.bloggif.com/distant/user/store/2/b/2/1/334c01907212f1266c42db8150be12b2.jpeg"
-						alt="eyes"></a>
-				<a href="https://www.bloggif.com/" title="Photo"><img
-						src="https://data.bloggif.com/distant/user/store/7/8/7/9/6ce0fb7647f5c3922428319ffd599787.jpeg"
-						alt="couple_doisneau"></a>
-				<a href="https://www.bloggif.com/" title="Photo"><img
-						src="https://data.bloggif.com/distant/user/store/b/3/d/8/12c14b77915be885914e8ad788ba8d3b.jpeg"
-						alt="stone"></a>
-				<a href="https://www.bloggif.com/" title="Photo"><img
-						src="https://data.bloggif.com/distant/user/store/0/c/4/c/033140d66b4fa187572b69530285c4c0.jpeg"
-						alt="Mattia_Bonnavida"></a>
+			<div class="gallery-grid container-fluid  ">
+				<img class="item-a img-fluid"
+					src="https://data.bloggif.com/distant/user/store/6/5/b/0/7cc06842824530850e1ff60b3ec50b56.jpeg"
+					alt="man_crying">
+				<img class="item-b img-fluid"
+					src="https://data.bloggif.com/distant/user/store/8/b/1/3/e4e066192b4e1588f981c450fd7431b8.jpeg"
+					alt="landscape_monia">
+				<img class="item-c img-fluid"
+					src="https://data.bloggif.com/distant/user/store/1/1/f/d/361cd18f9730374efbde4fcc0494df11.jpeg"
+					alt="funny_man">
+				<img class="item-d img-fluid"
+					src="https://data.bloggif.com/distant/user/store/c/b/f/e/978efbea3af3d7c76369cc6171eaefbc.jpeg"
+					alt="bear_monia">
+				<img class="item-e img-fluid"
+					src="https://data.bloggif.com/distant/user/store/a/0/d/b/60b83ac265b684c86d0870c6148ebd0a.jpeg"
+					alt="children">
+				<img class="item-f img-fluid"
+					src="https://data.bloggif.com/distant/user/store/7/c/0/d/03b526b30056493e61e43a4393a7d0c7.jpeg"
+					alt="husband_monia">
+				<img class="item-g img-fluid"
+					src="https://data.bloggif.com/distant/user/store/0/c/4/c/033140d66b4fa187572b69530285c4c0.jpeg"
+					alt="Mattia_Bonnavida">
+				<img class="item-h img-fluid"
+					src="https://data.bloggif.com/distant/user/store/b/3/d/8/12c14b77915be885914e8ad788ba8d3b.jpeg"
+					alt="stone">
+				<img class="item-i img-fluid"
+					src="https://data.bloggif.com/distant/user/store/7/8/7/9/6ce0fb7647f5c3922428319ffd599787.jpeg"
+					alt="couple_doisneau">
 			</div>
 		</section>
 

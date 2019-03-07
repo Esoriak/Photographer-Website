@@ -2,12 +2,39 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    padding-top: 56px;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.taillepolice {
+    font-size: 15px !important;
+    margin: 0px;
+    text-transform: lowercase;
+    position: absolute;
+    left: 70px;
+}
+
+.taillepolice span {
+    text-transform: uppercase;
+} 
+
+.hide-nav1 {
+    position: relative;
+
+}
+
+/* Landing cover */
+
 .landing-cover {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 140px);
     background: url("/images/mohamed-nohassi-175530-unsplash.jpg") center center;
     background-size: cover;
 }
@@ -40,7 +67,9 @@ html {
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 }
+
 /* Animation down arrow */
+
 @keyframes down {
     from {
         bottom: 0px;
@@ -52,19 +81,20 @@ html {
     }
 }
 
-
 /* ---- FLUX ---- */
 
 #flux {
-    padding-top: 5%;
-}
-.card {
-    width: 100%;
+    padding-top: 100px;
 }
 
-.workshops {
-    margin-left: 5%;
+.flux-box {
+    width: 100%;
+    max-height: 600px;
 }
+
+/* .workshops {
+    margin-left: 5%;
+} */
 
 /* modal 1 */
 .intro {
@@ -122,3 +152,44 @@ html {
     grid-template-columns: 1fr 1fr;
 }
 
+/* Section Gallery */
+
+#gallery {
+    margin-top:5%;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    grid-column-gap: 3%;
+    grid-row-gap: 2%;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+/* MEDIA QUERIES  */
+
+@media only screen and (max-width: 767px) {
+
+    .hide-nav1 {
+        display:none !important;
+    }
+
+    .padding-nav2 {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+    .landing-cover {
+        min-height: calc(100vh - 56px);
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
