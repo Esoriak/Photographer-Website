@@ -1,0 +1,78 @@
+body {
+    padding-top: 56px;
+  }
+  
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+  
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.img-fluid{
+  box-shadow: 3px 3px 3px 3px grey;
+}
+
+/* Apparition de la fléche au survol */
+
+.btn-primary i{
+  display: none;
+}
+
+.btn-primary:hover :nth-child(1){
+  display: block;
+}
+
+.fa-arrow-right{
+  font-size: 15px;
+  padding-top: 3%;
+  padding-left: 12px;
+  padding-bottom: 1%;
+}
+
+.button-tips {
+  width: 42%;
+}
+
+/* Effet Boutton */
+
+.button-tips button {
+  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+  -webkit-transition: all 0.4s ease; /* Safari et Chrome */
+  -moz-transition: all 0.4s ease; /* Firefox */
+  -ms-transition: all 0.4s ease; /* Internet Explorer 9 */
+  -o-transition: all 0.4s ease; /* Opera */
+  transition: all 0.4s ease;
+  -moz-transition-duration:300ms;
+  -o-transition-duration:300ms;
+  transition-duration:300ms;
+  font-size: 10px;
+  -webkit-transition:font-size 4s; /* Change la transition du size en seconde, au passage de la souris */
+  -moz-transition:font-size 4s;
+  transition: font-size 0.5s;
+  border: solid;
+  display: flex;
+  padding: 5% 5%;
+  }
+  
+  .button-tips:hover button {
+  /* L'image est grossie de 25% */
+  -webkit-transform:scale(1.05); /* Safari et Chrome */
+  -moz-transform:scale(1.05); /* Firefox */
+  -ms-transform:scale(1.05); /* Internet Explorer 9 */
+  -o-transform:scale(1.05); /* Opera */
+  transform:scale(1.05);
+  box-shadow: 3px 3px 3px grey;
+  font-size: 14px;
+  }
+  
+  .ic-photo{
+    list-style-image: url('https://data.bloggif.com/distant/user/store/c/2/1/6/256f297f7d91943a3746edaa2779612c.png');
+  }
