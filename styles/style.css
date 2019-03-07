@@ -1,6 +1,4 @@
  body {
-<<<<<<< HEAD
-  padding-top: 56px;
 }
 
 .portfolio-item {
@@ -39,45 +37,3 @@
   position: relative;
 
 }
-=======
-    padding-top: 56px;
-  }
-  
-  .portfolio-item {
-    margin-bottom: 30px;
-  }
-  
-  @media only screen and (max-width: 767px) {
-    .hide-nav1 {
-    display:none !important;
-    }
-  }
-  
-  @media only screen and (max-width: 767px) {
-    .padding-nav2 {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    }
-  }
-  
-  .taillepolice
-  {
-    font-size: 15px !important;
-    margin: 0px;
-    text-transform: lowercase;
-    position: absolute;
-    left: 70px;
-  }
-  
-  .taillepolice span {
-    text-transform: uppercase;
-  } 
-  
-  .hide-nav1 {
-    position: relative;
-  
-  }
-  
->>>>>>> d0612f5df2a5c79157ba14dbddcce3e75821b968
