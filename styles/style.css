@@ -52,8 +52,11 @@ html {
     }
 }
 
+
+/* ---- FLUX ---- */
+
 #flux {
-    padding-top: 50px;
+    padding-top: 5%;
 }
 .card {
     width: 35vw;
@@ -61,6 +64,7 @@ html {
 .workshops {
     margin-left: 5%;
 }
+
 /* modal 1 */
 .intro {
     padding-left:3%;
