@@ -59,8 +59,9 @@ html {
     padding-top: 5%;
 }
 .card {
-    width: 35vw;
+    width: 100%;
 }
+
 .workshops {
     margin-left: 5%;
 }
@@ -82,8 +83,6 @@ html {
     border: solid 1px black;
     border-radius: 3px 3px 3px 3px;
 }
-
-
 
 /* modal 2 */
 .modal-title {
@@ -115,3 +114,11 @@ html {
     padding-right: 3%;
     text-align: justify;
 }
+
+/* Section Gallery */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
