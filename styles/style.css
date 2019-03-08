@@ -172,7 +172,7 @@ height: 480px;
 /********************************** VIDEO BOOTSTRAP*****************************/
 video { 
     position: fixed;
-	  top: 50%;
+	top: 50%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
@@ -187,7 +187,7 @@ video {
 }
 
 
-header {
+.top-landing {
 	position: relative;
 	background-color: black;
 	height: 75vh;
@@ -196,7 +196,7 @@ header {
 	overflow: hidden;
   }
   
-  header video {
+  .top-landing video {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -211,12 +211,12 @@ header {
 	transform: translateX(-50%) translateY(-50%);
   }
   
-  header .container {
+  .top-landing .container {
 	position: relative;
 	z-index: 2;
   }
   
-  header .overlay {
+  .top-landing .overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -228,10 +228,269 @@ header {
   }
   
   @media (pointer: coarse) and (hover: none) {
-	header {
+	.top-landing {
 	  background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
 	}
-	header video {
+	.top-landing video {
 	  display: none;
 	}
   }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 56px;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.taillepolice {
+    font-size: 15px !important;
+    margin: 0px;
+    text-transform: lowercase;
+    position: absolute;
+    left: 70px;
+}
+
+.taillepolice span {
+    text-transform: uppercase;
+} 
+
+.hide-nav1 {
+    position: relative;
+
+}
+
+/* Landing cover */
+
+.landing-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 140px);
+    background: url("/images/mohamed-nohassi-175530-unsplash.jpg") center center;
+    background-size: cover;
+}
+
+.cover-socials img {
+    height: 2em;
+    margin: 0.5em;
+}
+
+.cover-wrap-content {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-arrow {
+    margin-top: auto;
+    margin-bottom: 1em;
+    position: relative;
+    animation-name: down;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+  }
+
+.down-arrow:hover {
+    animation-name: down;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+/* Animation down arrow */
+
+@keyframes down {
+    from {
+        bottom: 0px;
+        top: 0px;
+    }
+    100% {
+        opacity: 0.8;
+        top: 12px;
+    }
+}
+
+/* ---- FLUX ---- */
+
+#flux {
+    padding-top: 100px;
+}
+
+.flux-box {
+    width: 100%;
+    max-height: 600px;
+}
+
+.enfant-mouche {
+    min-height:250px;
+    min-width: 200px;
+}
+
+.text2 {
+    margin-left:10%;
+}
+.card2 {
+    margin-left:0;
+}
+
+.card3 {
+    width: 100%;
+}
+/* 
+p {
+    color: black;
+} */
+/* modal 1 */
+.intro {
+    padding-left:3%;
+    padding-right:3%;
+    text-align:justify;
+    font-style:italic;
+}
+.adress {
+    text-align: center;
+}
+.dates { 
+    margin-left: 30%;
+    width: 25%;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 3px 3px 3px 3px;
+}
+/* modal 2 */
+.modal-title {
+    text-align: center;
+    text-shadow: 3px 3px 3px grey;
+}
+
+.enfant_mouche {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    border: 1px solid black;
+    box-shadow: 0 0 2px 2px black;
+}
+.text-infos {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+}
+.example {
+    display :flex;
+    flex-direction: row;
+}
+.title {
+    font-size:2em;
+}
+.text-production {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+}
+
+/* Section Gallery */
+
+#gallery {
+    margin: 5% 0;
+}
+
+/* .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3%;
+    grid-row-gap: 2%;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-between;
+} */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 400px);
+    grid-gap: 25px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px grey;
+}
+
+/* Footer */
+
+.footer-text-color li a {
+    color: white;
+}
+
+/* MEDIA QUERIES  */
+
+@media only screen and (max-width: 767px) {
+
+    .hide-nav1 {
+        display:none !important;
+    }
+
+    .padding-nav2 {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+    .landing-cover {
+        min-height: calc(100vh - 56px);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 400px);
+        grid-gap: 15px;
+    }
+    
+    /* .enfant-mouche {
+        min-height:150px;
+        min-width:100px;
+    } */
+    .text2 {
+        margin-left:4%;
+    }
+    
+    .card3 {
+        margin-left: 0;
+        width: 100%;
+    }
+    .auditorium {
+        max-height: 75vw;
+        max-width : 65vw;
+    }
+    .enfant-mouche {
+        max-height:400px;
+        max-width:30vw;
+    }
+    .masterclass {
+        margin-top: 2%;
+    }
+    .enfant_mouche {
+        border: none;
+        box-shadow: none;
+    }
+    .card2 {
+        display: none;
+    }
+    .card3 {
+        display: none;
+    }
+}
