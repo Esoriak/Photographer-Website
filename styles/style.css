@@ -90,12 +90,28 @@ body {
 .flux-box {
     width: 100%;
     max-height: 600px;
+    margin-right:3%;
 }
-
 /* .workshops {
-    margin-left: 5%;
+    padding-left: 3%;
 } */
-
+.enfant-mouche {
+    min-height:250px;
+    min-width:200px;
+}
+.text2 {
+    margin-left:10%;
+}
+.card2 {
+    margin-left:0;
+}
+.card3 {
+    margin-left: 18%;
+    width: 110%;
+}
+p {
+    color: black;
+}
 /* modal 1 */
 .intro {
     padding-left:3%;
@@ -113,11 +129,10 @@ body {
     border: solid 1px black;
     border-radius: 3px 3px 3px 3px;
 }
-
 /* modal 2 */
 .modal-title {
     text-align: center;
-    text-shadow: 3px 3px 3px cyan;
+    text-shadow: 3px 3px 3px grey;
 }
 
 .enfant_mouche {
@@ -169,6 +184,19 @@ body {
     align-content: space-between;
 }
 
+.item-a,
+.item-b,
+.item-c,
+.item-d,
+.item-e,
+.item-f,
+.item-g,
+.item-h,
+.item-i {
+    box-shadow: 0 0 1px 2px grey;
+    border-radius: 13px 13px 13px 13px;
+}
+
 /* MEDIA QUERIES  */
 
 @media only screen and (max-width: 767px) {
@@ -191,5 +219,36 @@ body {
     .gallery-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-right:1%;
     }
+    .enfant-mouche {
+        min-height:150px;
+        min-width:100px;
+    }
+    .text2 {
+        margin-left:4%;
+    }
+    .card2 {
+        margin-left:0;
+    }
+    .card3 {
+        margin-left: 0;
+        width: 100%;
+    }
+    .auditorium {
+        max-height: 75vw;
+        max-width : 65vw;
+    }
+    .enfant-mouche {
+        max-height:80vw;
+        max-width:60vw;
+    }
+    .masterclass {
+        margin-top: 2%;
+    }
+    .enfant_mouche {
+        border: none;
+        box-shadow: none;
+    }
+    
 }
