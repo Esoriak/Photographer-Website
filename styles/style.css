@@ -14,7 +14,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   .padding-nav2 {
-  z-index: 1;
+  z-index: 1 !important;
   position: fixed;
   top: 0;
   width: 100%;
@@ -40,66 +40,137 @@ body {
 }
 
 .footer-text-color li a {
-  color: white;
+    color: white;
+}
+/* HEADER */
+
+.div-background--image {
+	background: url(http://podosteo-bonneuil.fr/wp-content/uploads/2016/03/1-24.jpg) fixed no-repeat;
+	padding-top: 370px;
+    padding-bottom: 320px;
+    text-align: center;
+    color: #fff; 
+}
+.container{
+	margin-bottom: 10 px;
+}
+.alert-link{
+	color: #989820;
 }
 
-.img-fluid{
-box-shadow: 3px 3px 3px 3px grey;
+
+h6{
+	/* color: #e1cf45; */
+	color: #5b7a8e;
 }
 
-/* Apparition de la fléche au survol */
-
-.btn-primary i{
-display: none;
+h2 span{
+    font-weight: bold;
+}
+.div-buttons{
+	top: 15%;
+}
+.div-buttons i{
+	font-size: 40px;
+	color: #fff;
+	opacity: 0.7;
 }
 
-.btn-primary:hover :nth-child(1){
-display: block;
+.div-buttons button{
+	padding: 20px;
+	
+}
+.btn:hover{
+	opacity: 0.3;	
 }
 
-.fa-arrow-right{
-font-size: 15px;
-padding-top: 3%;
-padding-left: 12px;
-padding-bottom: 1%;
+
+.divtel,
+.div-btn-hidden-mail{
+	display: none;
+} 
+
+
+form{
+	width: 50%;
+}
+.overlay {
+	overflow:hidden;
+	margin-top: 57px;
+	margin-left: 30px;
 }
 
-.button-tips {
-width: 42%;
+.custom-google-map{
+position:relative; 
+top:-46px; 
+border-style:none;
+width: 100%;
+height: 480px;
 }
 
-/* Effet Boutton */
-
-.button-tips button {
-/* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
--webkit-transition: all 0.4s ease; /* Safari et Chrome */
--moz-transition: all 0.4s ease; /* Firefox */
--ms-transition: all 0.4s ease; /* Internet Explorer 9 */
--o-transition: all 0.4s ease; /* Opera */
-transition: all 0.4s ease;
--moz-transition-duration:300ms;
--o-transition-duration:300ms;
-transition-duration:300ms;
-font-size: 10px;
--webkit-transition:font-size 4s; /* Change la transition du size en seconde, au passage de la souris */
--moz-transition:font-size 4s;
-transition: font-size 0.5s;
-border: solid;
-display: flex;
-padding: 12% 8%;
+/********************************** VIDEO BOOTSTRAP*****************************/
+video { 
+    position: fixed;
+	  top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ 	  background: url(img/IMG_0229.JPG) no-repeat;
+  	background-size: cover;
+	  transition: 60s opacity;
+	 opacity: 0.6;
 }
 
-.button-tips:hover button {
-/* L'image est grossie de 25% */
--webkit-transform:scale(1.05); /* Safari et Chrome */
--moz-transform:scale(1.05); /* Firefox */
--ms-transform:scale(1.05); /* Internet Explorer 9 */
--o-transform:scale(1.05); /* Opera */
-transform:scale(1.05);
-box-shadow: 3px 3px 3px grey;
-font-size: 14px;
-}
 
-.ic-photo{
-  list-style-image: url('https://data.bloggif.com/distant/user/store/c/2/1/6/256f297f7d91943a3746edaa2779612c.png');
-}
+header {
+	position: relative;
+	background-color: black;
+	height: 75vh;
+	min-height: 25rem;
+	width: 100%;
+	overflow: hidden;
+  }
+  
+  header video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+	position: relative;
+	z-index: 2;
+  }
+  
+  header .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+	header {
+	  background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+	}
+	header video {
+	  display: none;
+	}
+  }
