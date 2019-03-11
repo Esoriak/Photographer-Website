@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   padding-top: 56px;
 }
@@ -6,23 +10,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 767px) {
-  .hide-nav1 {
-  display:none !important;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .padding-nav2 {
-  z-index: 1 !important;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  }
-}
-
-.taillepolice
-{
+.taillepolice {
   font-size: 15px !important;
   margin: 0px;
   text-transform: lowercase;
@@ -43,66 +31,67 @@ body {
     color: white;
 }
 
-.img-fluid{
-	box-shadow: 3px 3px 3px 3px grey;
-	}
+.img-fluid {
+    box-shadow: 3px 3px 3px 3px grey;
+}
 	
 	/* Apparition de la fléche au survol */
 	
-	.btn-primary i{
-	display: none;
-	}
+.btn-primary i{
+    display: none;
+}
 	
-	.btn-primary:hover :nth-child(1){
-	display: block;
-	}
-	
-	.fa-arrow-right{
-	font-size: 15px;
-	padding-top: 3%;
-	padding-left: 12px;
-	padding-bottom: 1%;
-	}
-	
-	.button-tips {
-	width: 42%;
-	}
-	
-	/* Effet Boutton */
-	
-	.button-tips button {
-	/* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
-	-webkit-transition: all 0.4s ease; /* Safari et Chrome */
-	-moz-transition: all 0.4s ease; /* Firefox */
-	-ms-transition: all 0.4s ease; /* Internet Explorer 9 */
-	-o-transition: all 0.4s ease; /* Opera */
-	transition: all 0.4s ease;
-	-moz-transition-duration:300ms;
-	-o-transition-duration:300ms;
-	transition-duration:300ms;
-	font-size: 10px;
-	-webkit-transition:font-size 4s; /* Change la transition du size en seconde, au passage de la souris */
-	-moz-transition:font-size 4s;
-	transition: font-size 0.5s;
-	border: solid;
-	display: flex;
-	padding: 12% 8%;
-	}
-	
-	.button-tips:hover button {
-	/* L'image est grossie de 25% */
-	-webkit-transform:scale(1.05); /* Safari et Chrome */
-	-moz-transform:scale(1.05); /* Firefox */
-	-ms-transform:scale(1.05); /* Internet Explorer 9 */
-	-o-transform:scale(1.05); /* Opera */
-	transform:scale(1.05);
-	box-shadow: 3px 3px 3px grey;
-	font-size: 13px;
-	}
-	
-	.ic-photo{
-		list-style-image: url('https://data.bloggif.com/distant/user/store/c/2/1/6/256f297f7d91943a3746edaa2779612c.png');
-	}
+.btn-primary:hover :nth-child(1){
+    display: block;
+}
+
+.fa-arrow-right{
+    font-size: 15px;
+    padding-top: 3%;
+    padding-left: 12px;
+    padding-bottom: 1%;
+}
+
+.button-tips {
+    width: 42%;
+}
+
+/* Effet Boutton */
+
+.button-tips button {
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+    -webkit-transition: all 0.4s ease; /* Safari et Chrome */
+    -moz-transition: all 0.4s ease; /* Firefox */
+    -ms-transition: all 0.4s ease; /* Internet Explorer 9 */
+    -o-transition: all 0.4s ease; /* Opera */
+    transition: all 0.4s ease;
+    -moz-transition-duration:300ms;
+    -o-transition-duration:300ms;
+    transition-duration:300ms;
+    font-size: 10px;
+    -webkit-transition:font-size 4s; /* Change la transition du size en seconde, au passage de la souris */
+    -moz-transition:font-size 4s;
+    transition: font-size 0.5s;
+    border: solid;
+    display: flex;
+    padding: 12% 8%;
+}
+
+.button-tips:hover button {
+    /* L'image est grossie de 25% */
+    -webkit-transform:scale(1.05); /* Safari et Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* Internet Explorer 9 */
+    -o-transform:scale(1.05); /* Opera */
+    transform:scale(1.05);
+    box-shadow: 3px 3px 3px grey;
+    font-size: 13px;
+}
+
+.ic-photo{
+    list-style-image: url('https://data.bloggif.com/distant/user/store/c/2/1/6/256f297f7d91943a3746edaa2779612c.png');
+}
+
 /* HEADER */
 
 .div-background--image {
@@ -118,7 +107,6 @@ body {
 .alert-link{
 	color: #989820;
 }
-
 
 h6{
 	/* color: #e1cf45; */
@@ -145,16 +133,15 @@ h2 span{
 	opacity: 0.3;	
 }
 
-
 .divtel,
 .div-btn-hidden-mail{
 	display: none;
 } 
 
-
 form{
 	width: 50%;
 }
+
 .overlay {
 	overflow:hidden;
 	margin-top: 57px;
@@ -162,17 +149,17 @@ form{
 }
 
 .custom-google-map{
-position:relative; 
-top:-46px; 
-border-style:none;
-width: 100%;
-height: 480px;
+    position:relative; 
+    top:-46px; 
+    border-style:none;
+    width: 100%;
+    height: 480px;
 }
 
 /********************************** VIDEO BOOTSTRAP*****************************/
 video { 
     position: fixed;
-	  top: 50%;
+	top: 50%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
@@ -187,7 +174,7 @@ video {
 }
 
 
-header {
+.top-landing {
 	position: relative;
 	background-color: black;
 	height: 75vh;
@@ -196,7 +183,7 @@ header {
 	overflow: hidden;
   }
   
-  header video {
+  .top-landing video {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -211,12 +198,12 @@ header {
 	transform: translateX(-50%) translateY(-50%);
   }
   
-  header .container {
+  .top-landing .container {
 	position: relative;
-	z-index: 2;
+	z-index: 1;
   }
   
-  header .overlay {
+  .top-landing .overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -227,11 +214,271 @@ header {
 	z-index: 1;
   }
   
-  @media (pointer: coarse) and (hover: none) {
-	header {
-	  background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-	}
-	header video {
-	  display: none;
-	}
+@media (pointer: coarse) and (hover: none) {
+    .top-landing {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    .top-landing video {
+        display: none;
+    }
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.taillepolice {
+    font-size: 15px !important;
+    margin: 0px;
+    text-transform: lowercase;
+    position: absolute;
+    left: 70px;
+}
+
+.taillepolice span {
+    text-transform: uppercase;
+} 
+
+.hide-nav1 {
+    position: relative;
+
+}
+
+/* Landing cover */
+
+.landing-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 140px);
+    background: url("/images/mohamed-nohassi-175530-unsplash.jpg") center center;
+    background-size: cover;
+}
+
+.cover-socials img {
+    height: 2em;
+    margin: 0.5em;
+}
+
+.cover-wrap-content {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-arrow {
+    margin-top: auto;
+    margin-bottom: 1em;
+    position: relative;
+    animation-name: down;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    z-index: 1;
   }
+
+.down-arrow:hover {
+    animation-name: down;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+/* Animation down arrow */
+
+@keyframes down {
+    from {
+        bottom: 0px;
+        top: 0px;
+    }
+    100% {
+        opacity: 0.8;
+        top: 12px;
+    }
+}
+
+/* ---- FLUX ---- */
+
+#flux {
+    padding-top: 100px;
+}
+
+.card-exhibition {
+    width: 100%;
+}
+
+.card-2 img,
+.card-3 img {
+    max-width: 300px;
+}
+
+/* modal 1 */
+
+.intro {
+    padding-left:3%;
+    padding-right:3%;
+    text-align:justify;
+    font-style:italic;
+}
+.adress {
+    text-align: center;
+}
+.dates { 
+    margin-left: 30%;
+    width: 25%;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 3px 3px 3px 3px;
+}
+
+/* modal 2 */
+
+.modal-title {
+    text-align: center;
+    text-shadow: 3px 3px 3px grey;
+}
+
+.enfant_mouche {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    border: 1px solid black;
+    box-shadow: 0 0 2px 2px black;
+}
+
+.text-infos {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+}
+.example {
+    display :flex;
+    flex-direction: row;
+}
+.title {
+    font-size:2em;
+}
+.text-production {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+}
+
+/* Section Gallery */
+
+#gallery {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 5vw;
+    grid-gap: 15px;
+}
+
+.gallery-item-1 {
+    grid-column: 1;
+    grid-row: 1 / 8;
+}
+
+.gallery-item-2 {
+    grid-column: 1 / 3;
+    grid-row: 8 / 14;
+}
+.gallery-item-3 {
+    grid-column: 3;
+    grid-row: 6 / 14;
+}
+.gallery-item-4 {
+    grid-column: 2 / 4;
+    grid-row: 14 / 18;
+}
+
+.gallery-item-5 {
+    grid-column: 2;
+    grid-row: 4 / 8;
+}
+
+.gallery-item-6 {
+    grid-column: 3;
+    grid-row: 1 / 6;
+}
+
+.gallery-item-7 {
+    grid-column: 2;
+    grid-row: 1 / 4;
+}
+
+.gallery-item-8 {
+    grid-column: 1;
+    grid-row: 14 / 18;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1%;
+    box-shadow: 5px 5px 5px grey;
+}
+
+/* Footer */
+
+.footer-text-color li a {
+    color: white;
+}
+
+/* MEDIA QUERIES  */
+
+/* Small devices */
+@media only screen and (max-width: 767px) {
+
+    .hide-nav1 {
+        display:none !important;
+    }
+
+    .padding-nav2 {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+    .landing-cover {
+        min-height: calc(100vh - 56px);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .text2 {
+        margin-left:4%;
+    }
+    
+    .card3 {
+        margin-left: 0;
+        width: 100%;
+    }
+    .auditorium {
+        max-height: 75vw;
+        max-width : 65vw;
+    }
+
+    .enfant_mouche {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 575px) {
+    .card-2 img,
+    .card-3 img{
+        max-width: 100%;
+    }
+}
