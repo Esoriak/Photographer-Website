@@ -482,3 +482,10 @@ video {
         max-width: 100%;
     }
 }
+
+@media (min-width: 576px) and (max-width: 780px){
+	.modal-dialog {
+    max-width: fit-content !important;
+    margin: 1.75rem auto;
+	}
+}
