@@ -16,6 +16,6 @@ document.querySelectorAll("i").addEventListener("click", function() {
 */
 
 let audio = $("#audioID")[0];
-$("ul").click(function() {
+$(".ic-photo").click(function() {
     audio.play();
 })
