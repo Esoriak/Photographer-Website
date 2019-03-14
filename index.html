@@ -116,7 +116,7 @@
 				</div>
 			</div>
 			<!-- <div class="wrapper-down-arrow"> -->
-			<a href="#flux" class="down-arrow text-light"><i class="fas fa-angle-down fa-3x"></i></a>
+			<a href="#flux" id="down-arrow" class="down-arrow text-light"><i class="fas fa-angle-down fa-3x"></i></a>
 			<!-- </div> -->
 		</section>
 
@@ -124,21 +124,22 @@
 		<section id="flux" class="container">
 
 			<!-- Flux Title -->
-			<h2 class="text-center mb-5">Evènements</h2>
+			<h2 id="title_events" class="text-center mb-5">Evènements
+			</h2>
 
 			<div class="d-flex flex-column flex-lg-row">
-				
+
 				<!-- Exhibition Card -->
 				<div class="card-exhibition card">
 					<img src="https://data.bloggif.com/distant/user/store/e/4/5/b/49274eadd8005f6aee249ddd16b4b54e.jpeg"
 						class="card-img-top" alt="...">
-					<div class="card-body">
+					<div class="card-body d-flex flex-column align-items-center">
 						<h5 class="card-title">EXPOSITION A VENIR</h5>
 						<p class="card-text">Vendredi 26 Mars - Dimanche 28 Mars <br />
 							De 16h à minuit.<br />
 							Happy hours de 18h30 à 21h<br />
 							12 rue l'inné - 75005 PARIS</p>
-						<button type="button" class="btn btn-info" data-toggle="modal"
+						<button type="button" class="btn btn-dark" data-toggle="modal"
 							data-target=".expo-alcool-modal-xl">En savoir
 							plus sur l'expo</button>
 					</div>
@@ -151,17 +152,17 @@
 
 							<!-- Card image -->
 							<div class="col-sm-5 col-lg-4">
-								<img src="/images/enfantmouche.jpg" class="card-img" alt="...">
+								<img src="/images/enfantmouche.jpg" class="card-img" alt="enfantmouche">
 							</div>
 
 							<!-- Card text -->
 							<div class="col-sm-7 col-lg-8">
-								<div class="card-body">
+								<div class="card-body d-flex flex-column align-items-center">
 									<h5 class="card-title">STORYTELLING</h5>
 									<p class="card-text">Participer à un atelier d'écriture créative autour de la
 										photo.
 										Choisissez un portrait et écrivez votre histoire !</p>
-									<button type="button" class="btn btn-info" data-toggle="modal"
+									<button type="button" class="btn btn-dark" data-toggle="modal"
 										data-target=".storytelling-modal-xl">Infos
 										sur
 										l'atelier d'écriture</button>
@@ -177,20 +178,20 @@
 
 							<!-- Card text -->
 							<div class="col-sm-7 col-lg-8">
-								<div class="card-body">
+								<div class="card-body d-flex flex-column align-items-center">
 									<h5 class="card-title">MASTERCLASS</h5>
-									<p class="card-text">Participez à une materclass sur la photo. Toujours dans cet
+									<p class="card-text">Participez à une materclass sur la photo. Toujours dans cette
 										optique de partage
 										aucune participation n'est demandée. Pensez simplement à reservez !</p>
-									<button type="button" class="btn btn-info" data-toggle="modal"
-										data-target=".example-modal-xl">Plus
+									<button type="button" class="btn btn-dark" data-toggle="modal"
+										data-target=".masterclass-modal-xl">Plus
 										d'infos sur la masterclass</button>
 								</div>
 							</div>
 
 							<!-- Card image -->
 							<div class="col-sm-5 col-lg-4">
-								<img src="/images/fachy-marin-1401994-unsplash.jpg" class="card-img" alt="...">
+								<img src="/images/fachy-marin-1401994-unsplash.jpg" class="card-img" alt="masterclass">
 							</div>
 
 						</div>
@@ -200,124 +201,209 @@
 			</div>
 			<!-- ### MODAL 1 ### -->
 			<!-- Extra large modal -->
-
 			<div class="modal fade expo-alcool-modal-xl" tabindex="-1" role="dialog"
 				aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-xl">
+				<div class="modal-dialog modal-dialog-centered modal-xl">
 					<div class="modal-content info">
-						<h2 class="modal-title"> EXPOSITION A VENIR </h2>
 
-						<p class="intro"> Quel parisien n'a pas un jour bu à outrance dans les sous-sol d'un bar
-							?
-							Quelle parisienne n'a pas participer à un blind test en prenant une pinte ?
-							Avez-vous déjà fait une soirée apéro avec vos ami.e.s autour d'un verre de vin et
-							d'un
-							plateau de saucisson en terrasse ? Vous avez déjà oublier votre téléphone
-							au bar ou regarder un match de foot sur une chaise bancale en criant toujours plus
-							fort
-							que le voisin ?
-							Vous connaissez cette-heure de la nuit où les cigarettes s'enfilent devant le bar au
-							même rythme que s'égrainent shooters et coktails ?
-							On a tous une histoire de bar dans nos mémoires, et on à tous une soirée dont on ne
-							se
-							rappelle que vaguement.
-							Si un jour vous avez été Sam, vous avez vu tout ça d'un point de vue extérieur, et
-							ça
-							devait être encore plus drôle (quoi que ?!).
-							Je me suis mis à la place de ce Sam qui voit l'état de ses amis se détériorer au fil
-							des
-							heures, au fil des verres. J'ai vu des situations comiques,
-							des situations cocasses, inquiétantes, j'ai immortalisé des soirées entières à
-							philosopher, à boire trop, à rire tant qu'on veut et à boire tant qu'on peut.
-							Vous pourrez en voir un reportage photo qui sera exposé au bar "L'inévitable " qui
-							me
-							fait l'honneur d'accueillir une vingtaine de portraits.
-							Ne ratez pas ce rendez-vous, cela ne durera que 3 jours.
-							Je serais ravi d'échanger avec vous autour de cette thématique ( et d'un bon verre)
-							!
-							Au plaisir de partager ma passion avec le plus grand nombre, à très bientot.<br />
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title"> EXPOSITION A VENIR </h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
 
+						<!-- Modal body -->
+						<div class="modal-body">
+							<div class="row">
 
-						</p>
-						<p class="dates"> <span class="adress">12 rue l'inné - 75005 PARIS </span> <br />
-							Vendredi 26 Mars - Dimanche 28 Mars <br />
-							De 16h à minuit.<br />
-							Happy hours de 18h30 à 21h</p>
+								<div class="col-md-4">
+									<img class="img-fluid img-modal" src="images/alcool1.jpeg" alt="blur_alcool"> </div>
+
+								<div class="col-md-8">
+									<h3 class="my-3 title"> ALCOOL </h3>
+									<p class="intro">Quel parisien n'a pas un jour bu à outrance dans les sous-sol d'un
+										bar ?
+										Avez-vous déjà fait une soirée apéro avec vos ami.e.s autour d'un verre de vin
+										et
+										d'un plateau de saucisson en terrasse ?
+										Vous connaissez cette-heure de la nuit où les cigarettes s'enfilent devant le
+										bar au
+										même rythme que s'égrainent shooters et coktails ? <br />
+										On a tous une histoire de bar dans nos mémoires, et on à tous une soirée dont on
+										ne
+										se rappelle que vaguement.
+										Si un jour vous avez été Sam, vous avez vu tout ça d'un point de vue extérieur,
+										et
+										ça devait être encore plus drôle (quoi que ?!).
+										Je me suis mis à la place de ce Sam qui voit l'état de ses amis se détériorer au
+										fil
+										des heures, au fil des verres. <br />
+										J'ai vu des situations comiques,
+										des situations cocasses, inquiétantes, j'ai immortalisé des soirées entières à
+										philosopher, à boire trop, à rire tant qu'on veut et à boire tant qu'on
+										peut.<br />
+										Vous pourrez en voir un reportage photo qui sera exposé au bar "L'inévitable "
+										qui
+										me
+										fait l'honneur d'accueillir une vingtaine de portraits.<br />
+										Je serais ravi d'échanger avec vous autour de cette thématique ( et d'un bon
+										verre)
+										! A très bientot.<br />
+									</p>
+									<p class="text-modal"> J'ai immortalisé des soirées entières à
+										philosopher, à boire trop, à rire tant qu'on veut et à boire tant qu'on
+										peut... </p>
+									<p class="dates"> <span class="adress">12 rue l'inné - 75005 PARIS </span> <br />
+										Vendredi 26 Mars - Dimanche 28 Mars <br />
+										De 16h à minuit.<br />
+										Happy hours de 18h30 à 21h</p>
+								</div>
+							</div>
+						</div> <!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+						</div>
+
 					</div>
 				</div>
 			</div>
 
 			<!-- #### MODAL 2 ### -->
-
 			<div class="modal fade storytelling-modal-xl" tabindex="-1" role="dialog"
 				aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-xl">
+				<div class="modal-dialog modal-dialog-centered modal-xl">
 					<div class="modal-content">
-						<h2 class="modal-title"> ATELIER STORYTELLING</h2>
 
-						<p class="text-infos">Chaque photo ouvre des portes sur un
-							monde différent et vous seriez surpris de voir le nombre
-							d'interprétations possible d'une seule et même scène.
-							Je vous propose d'écrire votre histoire à partir d'une de mes photos pendant
-							l'atelier.
-							Vous pouvez voir l'exemple d'un production ci dessous.
-						</p>
-						<div class="example">
-							<a class="enfant_mouche" href="https://www.bloggif.com/" title="Photo"><img
-									src="https://data.bloggif.com/distant/user/store/2/3/6/f/7f84a9b63ee634011c46c823cc43f632.jpeg"
-									alt="enfant_mouche"></a>
-
-							<p class="text-production"> <span class="title"> L'Enfant-mouche</span><br />
-								Un petit corps frêle  à arrêter de se mouvoir <span class="words">l’espace d’un
-									déclic.</span><br />
-								Les bras croisés, l’œil provocant, l’enfant nous parle, et sourit. De ses yeux
-								si
-								noirs,
-								elle lance un appel d’espoir.<br />
-								<span class="words">Une mouche audacieuse </span> s’est posée sur sa peau mate.
-								Ses yeux attentifs à
-								l’objectif
-								ne
-								virent pas l’étonnante intrusion. Son épiderme habitué ne s’est pas défendu.
-								Mais
-								l’œil
-								impitoyable à vu, et s’en souvient.<br />
-								 Alors que la mouche venimeuse s’envole avec un morceau de petite fille,
-								<span class="words">l’enfance à
-									été
-									immortalisée</span>. Sertie d’un vêtement de coton sale où les rayures
-								blanches et
-								bleues
-								sont
-								autant d’épreuves à dépassées que d’<span class="words">espoir à
-									sauvegarder</span>.<br />
-								Ce tee-shirt, maculé de terre sèche,  deviendra trop petit lorsqu’elle aura pris
-								son
-								envol,
-								<span class="words">l’enfant-mouche.</span><br />
-								Lorsque tu t’en vas, avec, dans ta mémoire et celle de l’appareil photo, son
-								visage
-								déjà
-								marqué, elle s’élance, elle et son regard, profondeur des abysses. Les méandres
-								de
-								ses
-								souvenirs seront à l’image de <span class="words">ses cheveux
-									libérés</span>.<br />
-								Une mèche en épousera une autre, mais sous ce paysage brulant, elles ne
-								disposeront
-								que
-								de quelques moments, avant de s’éparpiller au vent. <br />
-								Chaud le <span class="words">courant d’air arrogant</span>, qui ne laissera pas
-								grandir l’enfant comme elle
-								le
-								mérite, sous ce
-								soleil ardent qui irrite.<br />
-								L’homme blanc  n’est pas méchant, <span class="words">il veut juste se souvenir
-									de toi</span>. Il déposera
-								dans
-								un
-								écrin de soie, sans le savoir, une enfant-mouche en émoi. </p>
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title"> ATELIER STORYTELLING</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
 						</div>
+
+						<!-- Modal body -->
+						<div class="modal-body">
+							<div class="row">
+
+								<div class="col-md-4">
+									<img class="img-fluid img-modal"
+										src="https://data.bloggif.com/distant/user/store/2/3/6/f/7f84a9b63ee634011c46c823cc43f632.jpeg"
+										alt="enfant_mouche"> </div>
+
+								<div class="col-md-8">
+									<h3 class="my-3 title"> L'Enfant-mouche</h3>
+									<p class="text-production">
+										Un petit corps frêle  à arrêter de se mouvoir l’espace d’un
+										déclic.<br />
+										Les bras croisés, l’œil provocant, l’enfant nous parle, et sourit. De ses yeux
+										si
+										noirs,
+										elle lance un appel d’espoir.<br />
+										Une mouche audacieuse s’est posée sur sa peau mate.
+										Ses yeux attentifs à
+										l’objectif
+										ne
+										virent pas l’étonnante intrusion. Son épiderme habitué ne s’est pas défendu.
+										Mais
+										l’œil
+										impitoyable à vu, et s’en souvient.<br />
+										Alors que la mouche venimeuse s’envole avec un morceau de petite fille,
+										l’enfance à
+										été
+										immortalisée. Sertie d’un vêtement de coton sale où les rayures
+										blanches et
+										bleues
+										sont
+										autant d’épreuves à dépassées que d’espoir à
+										sauvegarder.<br /><br />
+										Ce tee-shirt, maculé de terre sèche,  deviendra trop petit lorsqu’elle aura pris
+										son
+										envol,
+										l’enfant-mouche.<br />
+										Lorsque tu t’en vas, avec, dans ta mémoire et celle de l’appareil photo, son
+										visage
+										déjà
+										marqué, elle s’élance, elle et son regard, profondeur des abysses. Les méandres
+										de
+										ses
+										souvenirs seront à l’image de ses cheveux
+										libérés.<br />
+										Une mèche en épousera une autre, mais sous ce paysage brulant, elles ne
+										disposeront
+										que
+										de quelques moments, avant de s’éparpiller au vent. <br />
+										Chaud le courant d’air arrogant, qui ne laissera pas
+										grandir l’enfant comme elle
+										le mérite, sous ce soleil ardent qui irrite.<br />
+										L’homme blanc  n’est pas méchant, il veut juste se souvenir de toi. Il déposera
+										dans un écrin de soie, sans le savoir, une enfant-mouche en émoi. </p>
+										<p class="text-modal">Ses yeux attentifs à
+											l’objectif
+											ne
+											virent pas l’étonnante intrusion. Son épiderme habitué ne s’est pas défendu.
+											Mais
+											l’œil
+											impitoyable à vu, et s’en souvient.<br />
+											Alors que la mouche venimeuse s’envole avec un morceau de petite fille,
+											l’enfance à
+											été
+											immortalisée.[...]</p>
+								</div>
+							</div>
+						</div> <!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- ### MODAL 3 ### -->
+
+			<div class="modal fade masterclass-modal-xl" tabindex="-1" role="dialog"
+				aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-xl">
+					<div class="modal-content">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title"> MASTERCLASS NOIR ET BLANC</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<!-- Modal body -->
+						<div class="modal-body">
+							<div class="row">
+
+								<div class="col-md-4">
+									<img class="img-fluid img-modal"
+										src="https://pbs.twimg.com/profile_images/875482347658895361/OWbmmcOY_400x400.jpg"
+										alt="masterclass"> </div>
+
+								<div class="col-md-8">
+									<h3 class="my-3 title"> Partage de connaissances </h3>
+									<p class="text-production">J'ai toujours souhaité échanger avec d'autres
+										photographes, amateurs ou professionnels.
+										On apprend toujours de l'autre, que ce soit en technique, en perspective, qu'il
+										s'agisse d'un aspect pratique, d'habitudes de travail,
+										d'exigeance ou volonté artistique il faut se nourrir de nos différences.
+										Démarquez-vous par vos photos mais aussi par vos intentions.
+										La masterclass portera principalement sur la prise de portraits en noir et blanc
+										mais nous verrons aussi l'aspect préparation et le materiel nécessaire
+										en fonction de l'axe de travail. N'hesitez pas à reservez vos places et à
+										bientôt.
+									</p>
+									<p class="text-modal">On apprend toujours de l'autre, que ce soit en technique, en perspective, qu'il
+										s'agisse d'un aspect pratique, d'habitudes de travail,
+										d'exigeance ou volonté artistique il faut se nourrir de nos différences.
+										Démarquez-vous par vos photos mais aussi par vos intentions.</p>
+								</div>
+							</div>
+						</div> <!-- Modal footer -->
+						<div class="modal-footer">
+							<a class="btn btn-info" href="#" role="button">Réservez ma place</a>
+							<button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -336,14 +422,12 @@
 					src="https://data.bloggif.com/distant/user/store/8/b/1/3/e4e066192b4e1588f981c450fd7431b8.jpeg"
 					alt="landscape_monia">
 				<img class="gallery-img gallery-item-3"
-					src="https://data.bloggif.com/distant/user/store/1/1/f/d/361cd18f9730374efbde4fcc0494df11.jpeg"
-					alt="funny_man">
+					src="images/buffle.jpeg"
+					alt="buffle">
 				<img class="gallery-img gallery-item-4"
 					src="https://data.bloggif.com/distant/user/store/a/0/d/b/60b83ac265b684c86d0870c6148ebd0a.jpeg"
 					alt="children">
-				<img class="gallery-img gallery-item-5"
-					src="https://data.bloggif.com/distant/user/store/c/b/f/e/978efbea3af3d7c76369cc6171eaefbc.jpeg"
-					alt="bear_monia">
+				<img class="gallery-img gallery-item-12" src="images/fox.jpeg" alt="fox">
 				<img class="gallery-img gallery-item-6"
 					src="https://data.bloggif.com/distant/user/store/7/c/0/d/03b526b30056493e61e43a4393a7d0c7.jpeg"
 					alt="husband_monia">
@@ -356,6 +440,22 @@
 				<img class="gallery-img gallery-item-8"
 					src="https://data.bloggif.com/distant/user/store/b/3/d/8/12c14b77915be885914e8ad788ba8d3b.jpeg"
 					alt="stone">
+				<img class="gallery-img gallery-item-9" src="images/gorilla.jpeg" alt="gorilla">
+				<img class="gallery-img gallery-item-10" src="images/hat-man.jpeg" alt="hat-man">
+				<img class="gallery-img gallery-item-11" src="images/young-girl.jpeg" alt="young-girl">
+				<img class="gallery-img gallery-item-5"
+					src="https://data.bloggif.com/distant/user/store/c/b/f/e/978efbea3af3d7c76369cc6171eaefbc.jpeg"
+					alt="bear_monia">
+				<img class="gallery-img gallery-item-13" src="images/oldman.jpg" alt="oldman">
+				<img class="gallery-img gallery-item-14" src="images/monkey.jpeg" alt="monkey">
+				<img class="gallery-img gallery-item-15" src="images/zebra.jpeg" alt="zebra">
+				<img class="gallery-img gallery-item-11" src="images/gorilla-think.jpeg" alt="gorilla-think">
+				<img class="gallery-img gallery-item-16" src="images/IMG_20helder.jpg" alt="boats">
+				<img class="gallery-img gallery-item-17" src="images/IMG_20180helder.jpg" alt="sky-helder">
+				<img class="gallery-img gallery-item-18" src="images/IMG_20170610_100037_103helder.jpg" alt="flowers">
+				<img class="gallery-img gallery-item-19" src="images/DJI_0019-HDR.jpg" alt="color-helder">
+				<img class="gallery-img gallery-item-20" src="images/child.jpg" alt="child">
+				<img class="gallery-img gallery-item-21" src="images/wolf.jpeg" alt="wolf">
 			</div>
 		</section>
 
@@ -394,10 +494,10 @@
 
 					<ul class="list-unstyled footer-text-color">
 						<li>
-							<a href="#!">Question Frequentes</a>
+							<a href="#!">Questions Frequentes</a>
 						</li>
 						<li>
-							<a href="#!">Conditions Generales</a>
+							<a href="#!">Conditions Générales</a>
 						</li>
 						<li>
 							<a href="https://wildcodeschool.fr/">Wild Code School</a>
