@@ -16,6 +16,7 @@
 
 	<!-- Custom styles for this template -->
 	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/style-contact.css" rel="stylesheet">
 
 	<!-- FontAwesome css -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -72,6 +73,7 @@
 						<li class="nav-item">
 							<a class="nav-link" href="index.html">Accueil</a>
 						</li>
+						
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
 								aria-haspopup="true" aria-expanded="false">
@@ -86,6 +88,7 @@
 						<li class="nav-item">
 							<a class="nav-link active" href="contact.html">Contact</a>
 						</li>
+						
 					</ul>
 				</div>
 			</div>
@@ -101,45 +104,40 @@
 
 		<div class="container h-100">
 			<div class="d-flex h-100 text-center align-items-center">
-				<div class="w-100 text-white">
-					<h2 class="text-white"><span>CONTACTEZ</span>-NOUS</h2>
+				<div class="w-100 text-white testest">
+					<h2 class="text-white"><strong>CONTACTEZ</strong>-MOI</h2>
+					<div class="cover-socials">
+							<a href="https://twitter.com" target="_blank"><img src="images/socials/twitter.png"
+									class="socials-twitter"></a>
+							<a href="https://www.instagram.com/" target="_blank"><img src="images/socials/instagram.png"
+									class="socials-insta"></a>
+							<a href="https://www.pinterest.fr/" target="_blank"><img src="images/socials/pinterest.png"
+									class="socials-pinterest"></a>
+									<br>
 
-					<button type="button" class="btn div-buttons div-btn-block-tel" title="tel:+33102030405"><i class="fas fa-phone-square"></i><a
-							href="tel:+33102030405"></a></button>
+							<button type="button" class="btn div-buttons" title="tel:+33102030405"><i class="fas fa-phone-square"></i><a
+										href="tel:+33102030405"></a></button>
+			
+							<button type="button" class="btn div-buttons" title="mailto:xxxx@xx.xx"><i class="fas fa-at"></i><a
+										href="mailto:xxxx@xx.xx"></a></button>	
+						</div>
 
-
-
-					<button type="button" class="btn div-buttons" title="mailto:xxxx@xx.xx"><i class="fas fa-at"></i><a
-							href="mailto:xxxx@xx.xx"></a></button>
-
-
-					<!-------------------Block hidden------------------>
-					<div class="w-100 text-white divtel">
-						<p>01.54.58.36.54</p>
-					</div>
-					<div class="w-100 text-white div-btn-hidden-mail">
-						<p>abdel-karim@gmail.com</p>
-					</div>
-					<!-------------------Block hidden------------------>
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<main>
+	<main class="d-flex flex-column flex-md-row justify-content-around align-items-center">
 		<!---- Map ---->
-		<div class="row">
+	
 			<!-- Map Column -->
-			<div class="col-lg-5 overlay" onclick="style.pointerEvents='none'">
-				<iframe class="custom-google-map"
+			<div class="overlay-iframe flex-column flex-md-row justify-content-around align-items-center">		
+				<iframe class="custom-google-map "
 					src="https://www.google.com/maps/d/u/0/embed?mid=16z_w3dqj72NXIDZ8RBI20XNqAS_aQI3P"></iframe>
 			</div>
-
-			<br>
-
-			<!---- Formulaire ---->
-			<form class="text-center border border-light p-5">
-				<p class="h4 mb-4">Envoye-moi un message!</p>
+			<div class="div-form ">
+			<form class="text-center w-100">
+				<p class="h4 mb-4">Envoie-moi un message!</p>
 				<!-- Name -->
 				<input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nom">
 				<!-- Email -->
@@ -165,6 +163,8 @@
 				<!-- Send button -->
 				<button class="btn btn-primary btn-block" type="submit">Partager</button>
 			</form>
+		</div>
+
 	</main>
 
 	<!---- FOOTER ---->
@@ -196,7 +196,7 @@
 
 				</div>
 				<div class="col-md-3 mb-md-0 mb-3">
-					<h5 class="text-uppercase text-white">Pourquoi tu lis sa?</h5>
+					<h5 class="text-uppercase text-white">Pourquoi tu lis ça?</h5>
 
 					<ul class="list-unstyled footer-text-color">
 						<li>
