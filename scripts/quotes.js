@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Quotes variables
     const landingQuote = "<span>L</span>a création est la naissance de quelque chose. . ."
-    const eventQuote = "<span>D</span>epasser le superficiel pour accéder à l'essentiel";
-    const galleryQuote = "<span>L</span>es galleries d'images sont overrated"
+    const eventQuote = "<span>D</span>epasser le superficiel pour accéder à l'essentiel. . .";
+    const galleryQuote = "<span>C</span>e que la photographie reproduit à l'infini n'a lieu qu'une fois. . ."
 
 
     // Checks scroll position function when user scroll
