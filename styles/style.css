@@ -1,0 +1,80 @@
+html {
+    scroll-behavior: smooth;
+}
+    
+body {
+  padding-top: 56px;
+}
+
+.taillepolice {
+  font-size: 15px !important;
+  margin: 0px;
+  text-transform: lowercase;
+  position: absolute;
+  left: 70px;
+}
+
+.taillepolice span {
+  text-transform: uppercase;
+} 
+
+.hide-nav1 {
+  position: relative;
+
+}
+
+.footer-text-color li a {
+    color: white;
+}
+
+.img-fluid {
+    box-shadow: 3px 3px 3px 3px grey;
+}
+	
+.taillepolice {
+    font-size: 15px !important;
+    margin: 0px;
+    text-transform: lowercase;
+    position: absolute;
+    left: 70px;
+}
+
+.taillepolice span {
+    text-transform: uppercase;
+} 
+
+.hide-nav1 {
+    position: relative;
+
+}
+
+/* Footer */
+
+.footer-text-color li a {
+    color: white;
+}
+
+/* MEDIA QUERIES  */
+
+/* Small devices */
+@media only screen and (max-width: 767px) {
+
+    .hide-nav1 {
+        display:none !important;
+    }
+
+    .padding-nav2 {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 780px){
+	.modal-dialog {
+    max-width: fit-content !important;
+    margin: 1.75rem auto;
+    }
+}

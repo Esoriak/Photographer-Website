@@ -1,4 +1,14 @@
 /********************************** VIDEO BOOTSTRAP*****************************/
+
+/* @media (pointer: coarse) and (hover: none) {
+    .top-landing {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    .top-landing video {
+        display: none;
+    }
+} */
+
 video { 
     position: fixed;
 	top: 50%;
@@ -84,9 +94,6 @@ video {
 
 /* Button call action */
 
-
-
-
 .span-strong{
     font-weight: bold !important;
 }
@@ -113,11 +120,8 @@ video {
 		padding-right: 0px !important;
 	
 	}
-.div-buttons:hover{
-	opacity: 0.3;	}
 
-
-
-
-
+	.div-buttons:hover{
+		opacity: 0.3;	
+	}
 }
