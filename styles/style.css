@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
-
+    
 body {
   padding-top: 56px;
 }
@@ -298,10 +298,30 @@ video {
     }
 }
 
+/* Dynamic quotes */
+
+.quote-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.quote-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+}
+
 /* ---- FLUX ---- */
 
 #flux {
     padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#gallery {
+    padding-top: 50px;
+    margin-top: 0px !important;
 }
 
 .card-exhibition {
