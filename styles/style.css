@@ -102,6 +102,7 @@ font-size: 13px;
 
 .ic-photo{
   list-style-image: url('https://data.bloggif.com/distant/user/store/c/2/1/6/256f297f7d91943a3746edaa2779612c.png');
+<<<<<<< HEAD
   cursor: pointer;
   margin-right: 167px;
 }
@@ -174,3 +175,6 @@ font-size: 13px;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }*/
+=======
+}
+>>>>>>> 2dbd4ee815c75bd2fe951f32e8c1024956a9f949
