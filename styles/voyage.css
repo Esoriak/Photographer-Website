@@ -90,6 +90,8 @@ position: relative;
 
 .ic-photo{
   list-style-image: url('https://data.bloggif.com/distant/user/store/c/2/1/6/256f297f7d91943a3746edaa2779612c.png');
+  cursor: pointer;
+  margin-right: 167px;
 }
 
 /* HEADER */
