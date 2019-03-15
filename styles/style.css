@@ -507,6 +507,25 @@ video {
     box-shadow: 5px 5px 5px grey;
 }
 
+.gallery-img:hover {
+    box-shadow : 2px 2px 6px 5px black;
+}
+
+ /* bouton back to top */
+
+.backtotop {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    max-width: 80px;
+    border:solid 1px black;
+    min-height:2vw;
+    color: black;
+    border-radius: 3px 3px 3px 3px;
+    text-align: center;
+    font-size:1.1em;
+    box-shadow: 2px 2px 3px black;
+
+}
 /* Footer */
 
 .footer-text-color li a {
@@ -593,8 +612,8 @@ video {
     }
     .dates { 
         max-height: 30vw;
-        min-width:50vw;
-        color: black;
+        min-width: 50vw;
+        color: grey;
         margin-left:20%;
     }
     .card-text {
