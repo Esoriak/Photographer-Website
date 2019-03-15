@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
-    
+
 body {
   padding-top: 56px;
 }
@@ -298,20 +298,6 @@ video {
     }
 }
 
-/* Dynamic quotes */
-
-.quote-visible {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 2s linear;
-}
-
-.quote-hidden {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 1s, opacity 1s linear;
-}
-
 /* ---- FLUX ---- */
 /* ---- animation titre ---- */
 #title_events {
@@ -327,12 +313,6 @@ video {
 /* ---- flux ---- */
 #flux {
     padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-#gallery {
-    padding-top: 50px;
-    margin-top: 0px !important;
 }
 
 .card-exhibition {
@@ -533,7 +513,7 @@ video {
 
  /* bouton back to top */
 
-.backtotop {
+/* .backtotop {
     margin-left: 30px;
     margin-bottom: 30px;
     max-width: 80px;
@@ -543,7 +523,7 @@ video {
     border-radius: 3px 3px 3px 3px;
     text-align: center;
     font-size:1.1em;
-    box-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px black; */
 
 }
 /* Footer */
@@ -677,10 +657,10 @@ video {
         margin-left:10%;
     }
 }
-
-@media (min-width: 576px) and (max-width: 780px){
+@media (min-width: 575px) and (max-width: 780px){
 	.modal-dialog {
     max-width: fit-content !important;
     margin: 1.75rem auto;
     }
+   
 }
