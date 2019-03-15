@@ -48,6 +48,11 @@ body {
 
 }
 
+.cover-socials img {
+    height: 2em;
+    margin: 0.5em;
+}
+
 /* Footer */
 
 .footer-text-color li a {
