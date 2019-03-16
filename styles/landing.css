@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 140px);
-    background: url("/images/mohamed-nohassi-175530-unsplash.jpg") center center;
+    background: url("../images/mohamed-nohassi-175530-unsplash.jpg") center center;
     background-size: cover;
 }
 
