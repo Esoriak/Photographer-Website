@@ -1,9 +1,25 @@
+/* ENTRY SECTION  */
+
+.entry-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 234px);
+}
+
+.read-button {
+    text-align: center;
+    margin-top: 2em;
+}
+
+/* TIMELINE SECTION */
 /* Timeline Navigation */
+
 #timeline {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 10%;
+    padding-top: 89px;
 }
 .timeline-nav {
     position: absolute;
@@ -17,6 +33,8 @@
 
 }
 
+/* Timeline buttons */
+
 .timeline-buttons {
     display: flex;
     flex-direction: column;
@@ -24,46 +42,31 @@
     right: 35px;
 }
 
-#timeline-content {
+/* Timeline Content */
+
+#timelineContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.timeline-title {
-    /* margin-bottom: auto; */
-    text-align: center;
-    margin-top: 2em;
+    width: 100%;
 }
 
 .timeline-date {
     text-align: center;
-    /* margin: 1em 0; */
     font-size: 6em;
-    margin-top: auto;
+    margin-top: 1em;
 }
 
 .timeline-content-box {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    padding-top: 89px;
-    height: 100vh;
+    width: 100%;
+    height: calc(100vh - 89px);
 }
 
-.timeline-content-box p {
-    text-align: justify;
-    margin-bottom: auto;
-}
 
-.timeline-content-box img {
-    width: 70%;
-    align-self: center;
-    margin: 2em 0;
-    margin-top: auto;
-    margin-bottom: auto;
-}
+/* CAREFUL !! ALL BEHAVIOR OF TIMELINE JS BELOW THIS LINE  */
 
 .timeline-content-box {
     display: none;
@@ -72,4 +75,3 @@
 .active {
     display: flex;
 }
-
