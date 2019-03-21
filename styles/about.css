@@ -173,6 +173,10 @@
 	height: calc(100vh - 89px);
 }
 
+.helder-content-box {
+	background: url("http://karenmenezes.com/shapes-polygon/bg-cubes.png");
+}
+
 /* CAREFUL !! ALL BEHAVIOR OF TIMELINE JS BELOW THIS LINE  */
 
 .timeline-content-box {
