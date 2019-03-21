@@ -1,5 +1,7 @@
 // [DOM] - Variables DOM
 const timelineDOM = document.querySelector("#timelineContent");
+const genesisParaph = document.querySelector(".paragraph-wrapper");
+const readBtn = document.querySelector(".read-button"); 
 
 // [DOM] - Navigation 
 let navList = document.querySelectorAll(".timelineList");
@@ -30,18 +32,22 @@ const nextSection = (down) => {
     if (down === "down") {
         currentTimeline += 1;
         timelineDOM.children[currentTimeline].classList.add("active");
+        // timelineDOM.children[currentTimeline].fadeIn("slow");
     }
     else {
         currentTimeline -= 1;
         timelineDOM.children[currentTimeline].classList.add("active");
+        // timelineDOM.children[currentTimeline].fadeIn("slow");
     }
     console.log(currentTimeline);
 }
 
 const goToSection = (num) => {
-    timelineDOM.children[currentTimeline].classList.remove("active");
-    currentTimeline = num;
-    timelineDOM.children[currentTimeline].classList.add("active");
+    if (num !== currentTimeline) {
+        timelineDOM.children[currentTimeline].classList.remove("active");
+        currentTimeline = num;
+        timelineDOM.children[currentTimeline].classList.add("active");
+    }
 }
 
 //Apply functions on navigation side bar click
@@ -81,3 +87,9 @@ upBtn.addEventListener("click", () => {
         nextSection();
     }
 });
+
+// Animation of genesis section
+
+// readBtn.addaddEventListener("click", () => {
+//     genesisParaph.classList.add("slide-down-anim");
+// });
