@@ -20,6 +20,7 @@
   position: absolute;
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #79B3E5;
+  animation-delay: 3s;
 }
 .timeline-key {
   font-style: italic;
@@ -28,6 +29,8 @@
   color: transparent;
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: white;
+  opacity: 0.6;
+  animation-duration: 5s;
 }
 .poudrebleu {
   max-height:60vh;
@@ -46,8 +49,9 @@
 .prompt {
   position: absolute;
   max-width: 40vw;
-  color: grey;
+  color:white;
   top: 115vh;
   left: 8vw;
   font-size:1.2em;
+  opacity: 0.9;
 }
