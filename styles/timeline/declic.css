@@ -4,13 +4,15 @@
   opacity: 0.9;
 }
 .mohamed {
-    height: 815px;
-    width:998px;
+    max-height: 750px;
+    width:898px;
     margin-right:auto;
     margin-left:auto;
+    margin-top:1%;
+    margin-bottom:1%;
     position: relative;
     border-radius: 27px 27px 27px 27px;
-    box-shadow: black 4px 4px 4px 4px;;
+    box-shadow: black 4px 4px 4px 4px;
   }
 .declic {
   font-size:3em;
