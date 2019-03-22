@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+
+/*-- Shadow Effect --*/
+
+.text-fluo {
+		font-family: 'Fredericka the Great', cursive;
+		margin-top: 7%;
+    font-size: 1.5em;
+		color: #111;
+		text-shadow: 4px 0 20px #fefcc9, 17px 1px 78px #feec85, 0px -12px 20px #ffae34,
+			20px -4px 25px #ec760c, -63px 7px 125px #cd4606,
+		  0 -50px 131px #973716, 81px -144px 148px #451b0e;
+}
+
+.timeline-date-lave {
+	text-shadow: 4px 0 20px #fefcc9, 17px 1px 78px #feec85, 0px -12px 20px #ffae34,
+	20px -4px 25px #ec760c, -63px 7px 125px #cd4606,
+	0 -50px 131px #973716, 81px -144px 148px #451b0e;
+}
+
+/*-- Title Effect --*/
+
+.text-fluo > span {
+  text-transform: uppercase;
+  animation: glow 2.5s ease-in-out infinite;
+  animation: random 5s infinite;
+}
+
+@keyframes  random {
+
+    15% { color: rgb(206, 90, 12); } 
+    30% { color: rgb(163, 68, 4); } 
+    45% { color: rgb(226, 103, 21); }
+}
+
+@keyframes glow {
+  0%, 100% {
+    color: rgb(190, 60, 60);
+    text-shadow: 0 0 10px rgb(44, 3, 109), 0 0 50px rgb(204, 17, 195), 0 0 100px rgb(218, 136, 13);
+  }
+  
+  10%, 90% {
+    color: rgb(17, 12, 12);
+    text-shadow: none;
+  }
+  100% {
+    color: rgb(7, 6, 6);
+    text-shadow: 0 0 10px rgb(44, 3, 109), 0 0 50px rgb(204, 17, 195), 0 0 100px rgb(218, 136, 13);
+  }
+}
+
+.text-fluo > span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.text-fluo > span:nth-child(3) {
+	animation-delay: 0.5s;
+}
+
+.text-fluo > span:nth-child(4) {
+	animation-delay: 0.75s;
+}
+
+.text-fluo > span:nth-child(5) {
+	animation-delay: 1s;
+}
+
+.text-fluo > span:nth-child(6) {
+	animation-delay: 1.25s;
+}
+
+.text-fluo > span:nth-child(7) {
+	animation-delay: 1.5s;
+}
+
+.text-fluo > span:nth-child(8) {
+	animation-delay: 1.75s;
+}
+
+.text-fluo > span:nth-child(9) {
+	animation-delay: 2s;
+}
+
+/*-- Background Image -- */
+
+#timelineBoxFour {
+    background-image: url("https://images.unsplash.com/photo-1551214012-84f95e060dee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80.jpg");
+    background-size: cover;
+}
+
+/*-- Card Effect Slide --*/
+
+.body3D {
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+	background-color: #111;
+	font-family: "Montserrat";
+}
+
+.card3D {
+	min-width: 700px;
+	min-height: 350px;
+	border-radius: 20px;
+	position: relative;
+	-webkit-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+	transform-style: preserve-3d;
+}
+
+.side {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 105%;
+	padding: 55px 132px;
+	top: 53px;
+	color: #fff;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 20px;
+}
+
+.h1-card{
+	color: white;
+	font-size: 1em;
+	text-shadow: 2px 2px 2px black;
+}
+.textside {
+	transform: translatez(110px) scale(0.8);
+	line-height: 3.5em;
+	font-size: 19px;
+}
+.textside .h1.card {
+	position: relative;
+}
+.textside .p-text {
+	color: black;
+	margin-top: 50px;
+	line-height: 3.5em;
+	text-shadow: 1px 1px 1px white;
+}
+.textside .h1-card:before {
+	position: absolute;
+	bottom: -20px;
+}
+.front {
+	z-index: 2;
+	background-size: 100vh;
+	background-size: cover;
+	background-image: url(https://images.unsplash.com/photo-1490730346702-f26778d680e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=80);
+}
+.back {
+	background-color: #333;
+	transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 10px;
+	background-image: url(https://images.unsplash.com/photo-1479639768163-ba2a6baa5dfb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1570&q=80);
+}
+.card3D:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+form {
+	text-align: left;
+}
+
+form input,
+form textarea {
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #444;
+	padding: 5px;
+	width: 100%;
+	color: #fff;
+}

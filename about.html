@@ -18,7 +18,8 @@
     <!-- Custom styles for this template -->
     <link href="styles/style.css" rel="stylesheet">
     <link href="styles/about.css" rel="stylesheet">
-    
+    <link href="styles/antho.css" rel="stylesheet">
+
     <!-- Timeline styles -->
     <link href="styles/timeline/antho.css" rel="stylesheet">
     <link href="styles/timeline/declic.css" rel="stylesheet">
@@ -32,6 +33,16 @@
 
     <!-- Theme BootStrap -->
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.css">
+
+    <!--Animation picture Antho-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/OrbitControls-2.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/OrbitControls-2.js"></script>
 
 </head>
 
@@ -114,10 +125,12 @@
     <main>
         <section id="about-entry">
             <div class="entry-wrapper">
-                <a href="#timeline"><h2 class="read-button">Read my story</h2></a>
+                <a href="#timeline">
+                    <h2 class="read-button">Read my story</h2>
+                </a>
             </div>
         </section>
-        
+
         <section id="timeline">
             <!-- Timeline Navigation -->
             <div class="timeline-nav">
@@ -132,7 +145,7 @@
 
             <!-- All Timelines -->
             <div id="timelineContent">
-                
+
                 <!-- Timeline Content #1 -->
 
                 <!-- !! Arnaud !! -->
@@ -140,21 +153,25 @@
                     <h3 class="timeline-date test-title">1</h3>
                     <h4 class="text-center">Genesis</h4>
                     <img src="images/abdel/mohamed-nohassi-482912-unsplash.jpg">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et lacinia orci. Ut hendrerit elit eros, vitae
-                        mollis justo tempor fringilla. Integer eget tortor lectus. Nunc scelerisque lorem eu ligula tincidunt, sit amet
-                        venenatis nisi semper. Curabitur ut erat sit amet eros tincidunt fringilla id ac tortor. Aliquam id nulla nisi.
-                        Maecenas in faucibus tellus. In dictum ultrices dignissim. Vestibulum nunc felis, tristique ac tempor ut, bibendum
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et lacinia orci. Ut
+                        hendrerit elit eros, vitae
+                        mollis justo tempor fringilla. Integer eget tortor lectus. Nunc scelerisque lorem eu ligula
+                        tincidunt, sit amet
+                        venenatis nisi semper. Curabitur ut erat sit amet eros tincidunt fringilla id ac tortor. Aliquam
+                        id nulla nisi.
+                        Maecenas in faucibus tellus. In dictum ultrices dignissim. Vestibulum nunc felis, tristique ac
+                        tempor ut, bibendum
                         eget nibh.</p>
                 </div>
-                
+
                 <!-- Timeline Content #2 -->
 
                 <!-- !! SO !! -->
-                <div id="timelineBoxTwo"class="timeline-content-box">
+                <div id="timelineBoxTwo" class="timeline-content-box">
                     <h3 class="timeline-date">2</h3>
                     <h4 class="text-center">Subtitle</h4>
                 </div>
-                
+
                 <!-- Timeline Content #3 -->
 
                 <!-- !! Monia !! -->
@@ -163,27 +180,53 @@
                     <h4 class="text-center">Subtitle</h4>
                 </div>
 
-                 <!-- Timeline Content #4 -->
+                <!-- Timeline Content #4 -->
 
-                 <!-- !! ANTHO !! -->
-                 <div id="timelineBoxFour" class="timeline-content-box">
-                    <h3 class="timeline-date">4</h3>
-                    <h4 class="text-center">Subtitle</h4>
+                <!-- !! ANTHO !! -->
+                <div id="timelineBoxFour" class="timeline-content-box">
+                    <h4 class="text-center">
+                        <div class="text-fluo">
+                            <span>I</span>
+                            <span>n</span>
+                            <span>t</span>
+                            <span>r</span>
+                            <span>e</span>
+                            <span>p</span>
+                            <span>i</span>
+                            <span>d</span>
+                            <span>e</span>
+                        </div>
+                    </h4>
+                    <div class="boby3D">
+                        <div class="container card3D">
+                            <div class="front side">
+                                <div class="content textside">
+                                    <h1 class="h1-card">Abdel Karim</h1>
+                                    <p class="p-text">L'expérience n'a de saveur que si elle est périlleuse. Que ce soit
+                                        dans l'action, les choix, ou l'émotion, cassez les barrières : soyez fous, soyez
+                                        intrépides.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Content #5 -->
+
+                    <!-- !! HELDER !! -->
+                    <div id="timelineBoxFive" class="timeline-content-box">
+                        <h3 class="timeline-date">5</h3>
+                        <h4 class="text-center">Subtitle</h4>
+                    </div>
+
                 </div>
-
-                 <!-- Timeline Content #5 -->
-
-                 <!-- !! HELDER !! -->
-                 <div id="timelineBoxFive" class="timeline-content-box">
-                    <h3 class="timeline-date">5</h3>
-                    <h4 class="text-center">Subtitle</h4>
+                <div class="timeline-buttons">
+                    <button id="upButton"><i class="fas fa-chevron-up"></i></button>
+                    <button id="downButton"><i class="fas fa-chevron-down"></i></button>
                 </div>
-
-            </div>
-            <div class="timeline-buttons">
-                <button id="upButton"><i class="fas fa-chevron-up"></i></button>
-                <button id="downButton"><i class="fas fa-chevron-down"></i></button>
-            </div>
         </section>
     </main>
 
@@ -246,4 +289,5 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="scripts/timeline.js"></script>
+    <script src="scripts/timelineAntho.js"></script>
 </body>
