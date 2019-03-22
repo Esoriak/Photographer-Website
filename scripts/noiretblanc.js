@@ -1,6 +1,6 @@
 $(function(){
   $('.btnli').click(function(){
-    $('#icon').hasClass('open') ? $('#icon').removeClass('open'):$('#icon').addClass('open')
+    $('.icon').hasClass('open') ? $('.icon').removeClass('open'):$('.icon').addClass('open');
   })
 })
 
