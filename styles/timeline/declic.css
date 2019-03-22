@@ -1,30 +1,40 @@
-#timelineBoxTwo{
+#timelineBoxTwo {
   background-image: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80");
   background-size: cover;
-  opacity: 0.9;
 }
 .mohamed {
+<<<<<<< HEAD
     max-height: 750px;
     width:898px;
     margin-right:auto;
     margin-left:auto;
     margin-top:1%;
+=======
+    height: calc(750px - 100px);
+    width: calc(998px - 100px);
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: 1%;
+>>>>>>> 8636e24a77a2644834be3f767c3e1f68e3fd2ebc
     margin-bottom:1%;
     position: relative;
     border-radius: 27px 27px 27px 27px;
     box-shadow: black 4px 4px 4px 4px;
   }
+
 .declic {
   font-size:3em;
   color: transparent;
-  top: 175vh;
-  right: 25vw;
+  top: 178vh;
+  right: 550px;
   position: absolute;
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #79B3E5;
   animation-delay: 3s;
 }
+
 .timeline-key {
+  margin-top: auto;
   font-style: italic;
   font-size: 4.3em;
   margin-left: 30vw;
@@ -35,11 +45,11 @@
   animation-duration: 5s;
 }
 .poudrebleu {
-  max-height:60vh;
+  max-height:50vh;
   max-width:30vw;
   position: absolute;
-  top: 130vh;
-  left: 10vw;
+  top: 140vh;
+  left: 15vw;
 }
 .poudreverte {
   max-height: 80vh;
@@ -52,7 +62,7 @@
   position: absolute;
   max-width: 40vw;
   color:white;
-  top: 115vh;
+  top: 125vh;
   left: 8vw;
   font-size:1.2em;
   opacity: 0.9;
