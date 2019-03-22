@@ -23,7 +23,8 @@
 }
 .timeline-nav {
 	position: absolute;
-	left: 5%;
+    left: 5%;
+    z-index: 4;
 }
 
 .timeline-nav ul {
@@ -31,9 +32,9 @@
     flex-direction: column;
     justify-content: space-around;
 	margin: 0;
-	padding: 20px;
-    border-left: solid 5px black;
-    border-radius: 10px;
+	padding: 21px;
+    border-left: solid 2px black;
+    /* border-radius: 10px; */
     height: 50vh;
 }
 
@@ -96,7 +97,7 @@
   }
 .arrow-top, .arrow-bottom {
     background-color: black;
-    height: 4px;
+    height: 2px;
     left: -5px;
     position: absolute;
     top: 50%;
