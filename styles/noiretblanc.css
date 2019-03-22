@@ -110,7 +110,7 @@
   animation-iteration-count: 1;
 }
 
-#camera, #panel {
+.camera, .panel {
   position: absolute;
   left: 80%; top: 111%;
   width: 84px; height: 84px;
@@ -125,7 +125,7 @@
   -o-transition: all .8s ease-in-out;
 }
 
-#panel {
+.panel {
  box-shadow: inset 0px -3px 0px rgba(0,0,0,.2);
 -o-transition: all 1s ease-in-out;
 -moz-transition: all 1s ease-in-out;
@@ -133,7 +133,7 @@
 transition: all 1s ease-in-out;
 }
 
-#camera {
+.camera {
   z-index:2;
 }
 
@@ -202,7 +202,7 @@ transition: all 1s ease-in-out;
 }
 
 /* slide */
-#icon.open > #panel {
+.icon.open > .panel {
   transform: translateX(45px);
   margin-left: -221px;
   border-radius: 7px;
@@ -213,19 +213,19 @@ transition: all 1s ease-in-out;
   background: none;
   width: 87%;
 }
-#icon.open > #camera {
+.icon.open > .camera {
   margin-left:-300px;
 }
 
 @media (max-width:760px) {
-  #camera{
+  .camera{
     display: none;
   }
   .col-md-4, p{
     margin-top: -19px;
     margin-bottom: 7rem;
   }
-  #panel{
+  .panel{
     position: absolute;
     left: -96%;
     top: 95%;
