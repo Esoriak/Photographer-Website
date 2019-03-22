@@ -1,0 +1,57 @@
+#timelineBoxTwo{
+  background-image: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80");
+  background-size: cover;
+  opacity: 0.9;
+}
+.mohamed {
+    height: 815px;
+    width:998px;
+    margin-right:auto;
+    margin-left:auto;
+    position: relative;
+    border-radius: 27px 27px 27px 27px;
+    box-shadow: black 4px 4px 4px 4px;;
+  }
+.declic {
+  font-size:3em;
+  color: transparent;
+  top: 175vh;
+  right: 25vw;
+  position: absolute;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #79B3E5;
+  animation-delay: 3s;
+}
+.timeline-key {
+  font-style: italic;
+  font-size: 4.3em;
+  margin-left: 30vw;
+  color: transparent;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: white;
+  opacity: 0.6;
+  animation-duration: 5s;
+}
+.poudrebleu {
+  max-height:60vh;
+  max-width:30vw;
+  position: absolute;
+  top: 130vh;
+  left: 10vw;
+}
+.poudreverte {
+  max-height: 80vh;
+  max-width: 40vw;
+  position:absolute;
+  top: 106vh;
+  right: 5vw;
+}
+.prompt {
+  position: absolute;
+  max-width: 40vw;
+  color:white;
+  top: 115vh;
+  left: 8vw;
+  font-size:1.2em;
+  opacity: 0.9;
+}

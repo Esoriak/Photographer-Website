@@ -4,35 +4,37 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <title>Abdel Karim - Photographe</title>
+	<title>Abdel Karim - Photographe</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Custom styles for this template -->
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="styles/about.css" rel="stylesheet">
-    <link href="styles/antho.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/about.css" rel="stylesheet">
 
-    <!-- Timeline styles -->
-    <link href="styles/timeline/antho.css" rel="stylesheet">
-    <link href="styles/timeline/declic.css" rel="stylesheet">
-    <link href="styles/timeline/genesis.css" rel="stylesheet">
-    <link href="styles/timeline/helder.css" rel="stylesheet">
-    <link href="styles/timeline/subjectif.css" rel="stylesheet">
+	<!-- Timeline styles -->
+	<link href="styles/timeline/antho.css" rel="stylesheet">
+	<link href="styles/timeline/declic.css" rel="stylesheet">
+	<link href="styles/timeline/genesis.css" rel="stylesheet">
+	<link href="styles/timeline/helder.css" rel="stylesheet">
+	<link href="styles/timeline/subjectif.css" rel="stylesheet">
 
-    <!-- FontAwesome css -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!-- Animate css texte -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
-    <!-- Theme BootStrap -->
-    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.css">
+	<!-- FontAwesome css -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<!-- Theme BootStrap -->
+	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.css">
 
     <!--Animation picture Antho-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>
@@ -134,12 +136,12 @@
         <section id="timeline">
             <!-- Timeline Navigation -->
             <div class="timeline-nav">
-                <ul class="">
-                    <li id="timeline-nav-one"><a href="#timelineBoxOne">1</a></li>
-                    <li id="timeline-nav-two"><a href="#timelineBoxTwo">2</a></li>
-                    <li id="timeline-nav-three"><a href="#timelineBoxThree">3</a></li>
-                    <li id="timeline-nav-two"><a href="#timelineBoxFour">4</a></li>
-                    <li id="timeline-nav-three"><a href="#timelineBoxFive">5</a></li>
+                <ul id="timelineList" class="">
+                    <li id="timeline-nav-one" class="timelineList"><a href="#timeline">Genesis</a></li>
+                    <li id="timeline-nav-two" class="timelineList"><a href="#timeline">2</a></li>
+                    <li id="timeline-nav-three" class="timelineList"><a href="#timeline">3</a></li>
+                    <li id="timeline-nav-four" class="timelineList"><a href="#timeline">4</a></li>
+                    <li id="timeline-nav-five" class="timelineList"><a href="#timeline">5</a></li>
                 </ul>
             </div>
 
@@ -150,34 +152,43 @@
 
                 <!-- !! Arnaud !! -->
                 <div id="timelineBoxOne" class="timeline-content-box active">
-                    <h3 class="timeline-date test-title">1</h3>
-                    <h4 class="text-center">Genesis</h4>
-                    <img src="images/abdel/mohamed-nohassi-482912-unsplash.jpg">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et lacinia orci. Ut
-                        hendrerit elit eros, vitae
-                        mollis justo tempor fringilla. Integer eget tortor lectus. Nunc scelerisque lorem eu ligula
-                        tincidunt, sit amet
-                        venenatis nisi semper. Curabitur ut erat sit amet eros tincidunt fringilla id ac tortor. Aliquam
-                        id nulla nisi.
-                        Maecenas in faucibus tellus. In dictum ultrices dignissim. Vestibulum nunc felis, tristique ac
-                        tempor ut, bibendum
-                        eget nibh.</p>
+                    <h3 class="timeline-date test-title">Genesis</h3>
+                    
+                    <div class="paragraph-wrapper">
+                        <h4 class="timeline-subtitle">1985 - 2005</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et lacinia orci. Ut
+                            hendrerit elit eros, vitae
+                            mollis justo tempor fringilla. Integer eget tortor lectus. Nunc scelerisque lorem eu ligula
+                            tincidunt, sit amet
+                            venenatis nisi semper. Curabitur ut erat sit amet eros tincidunt fringilla id ac tortor. Aliquam
+                            id nulla nisi.
+                            Maecenas in faucibus tellus. In dictum ultrices dignissim. Vestibulum nunc felis, tristique ac
+                            tempor ut, bibendum
+                            eget nibh.</p>
+                    </div>
+                    
                 </div>
 
                 <!-- Timeline Content #2 -->
 
                 <!-- !! SO !! -->
-                <div id="timelineBoxTwo" class="timeline-content-box">
-                    <h3 class="timeline-date">2</h3>
-                    <h4 class="text-center">Subtitle</h4>
+				<div id="timelineBoxTwo" class="timeline-content-box">
+                    <h3 class="animated rotateInDownLeft timeline-key" class="timeline-date ">Des clics</h3>
+                    <img class="animated flipInX mohamed"
+                        src="https://images.unsplash.com/photo-1512032815926-08d9f76482f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=698&q=80"
+                        alt="constrast" />
+                    <h2 class="animated flip declic slow"> Déclic</h2>
+                    <img class="animated swing poudrebleu" src="images/poudrebleu.png" alt="poudrebleu" />
+                    <img class="animated bounceIn slow poudreverte" src="images/poudreverte.png" alt="poudreverte" />
+                    <p class="text-center"> </p>
+                    <h4 class="animated wobble prompt slower">Le déclic n'arrive pas tant qu'on l'attend. Un moment vous fermez les yeux, regardez un coucher de soleil, l'instant d'après il est avec vous pour toujours.</h4>
                 </div>
-
                 <!-- Timeline Content #3 -->
 
                 <!-- !! Monia !! -->
                 <div id="timelineBoxThree" class="timeline-content-box">
                     <h3 class="timeline-date">3</h3>
-                    <h4 class="text-center">Subtitle</h4>
+                    <h4 class="text-center">Subjectif</h4>
                 </div>
 
                 <!-- Timeline Content #4 -->
@@ -213,20 +224,66 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Timeline Content #5 -->
-
-                    <!-- !! HELDER !! -->
-                    <div id="timelineBoxFive" class="timeline-content-box">
-                        <h3 class="timeline-date">5</h3>
-                        <h4 class="text-center">Subtitle</h4>
-                    </div>
-
                 </div>
-                <div class="timeline-buttons">
-                    <button id="upButton"><i class="fas fa-chevron-up"></i></button>
-                    <button id="downButton"><i class="fas fa-chevron-down"></i></button>
+
+                <!-- Timeline Content #5 -->
+
+                <!-- !! HELDER !! -->
+                <div id="timelineBoxFive" class="timeline-content-box">
+                    <h3 class="timeline-date">5</h3>
+                    <h4 class="text-center">Événements</h4>
+                    <ul id="hexGrid">
+                        <li class="hex">
+                            <a class="hexIn" href="#">
+                                <img src="/images/water-sun-helder.jpg" alt="" />
+                                <h1>Sunset</h1>
+                                <p>Exposition sur les paysages "Mélanges de matières"</p>
+                            </a>
+                        </li>
+                        <li class="hex">
+                            <a class="hexIn" href="#">
+                                <img src="/images/blue-bike-helder.jpg" alt="" />
+                                <h1>Biking</h1>
+                                <p>Championnat d'Europe de BMX à Toronto </p>
+                            </a>
+                        </li>
+                        <li class="hex">
+                            <a class="hexIn" href="#">
+                                <img src="/images/yellow-rock-helder.jpg" alt="" />
+                                <h1>Wakeboard</h1>
+                                <p>Exhibition en Floride</p>
+                            </a>
+                        </li>
+                        <li class="hex">
+                            <a class="hexIn" href="#">
+                                <img src="/images/photo-ane-helder.jpg" alt="" />
+                                <h1>Rencontre</h1>
+                                <p>Voyage itinérant au Maroc</p>
+                            </a>
+                        </li>
+                        <li class="hex">
+                            <a class="hexIn" href="#">
+                                <img src="/images/rainbow-helder.jpg" alt="" />
+                                <h1>Rainbow</h1>
+                                <p>Rainbow party au Brésil</p>
+                            </a>
+                        </li>
                 </div>
+
+            <!-- Timeline Controls -->
+            <div class="timeline-buttons">
+                <div id="upButton" class="arrow arrow-up">
+                    <div class="arrow-top"></div>
+                    <div class="arrow-bottom"></div>
+                </div>
+                <div id="downButton" class="arrow">
+                    <div class="arrow-top"></div>
+                    <div class="arrow-bottom"></div>
+                </div>
+                <!-- <button id="downButton"><i class="fas fa-chevron-up"></i></button> -->
+                <!-- <button id="downButton"><i class="fas fa-chevron-down"></i></button> -->
+            </div>
+
         </section>
     </main>
 
@@ -263,7 +320,7 @@
 
                     <ul class="list-unstyled footer-text-color">
                         <li>
-                            <a href="#!">Questions Frequentes</a>
+                            <a href="#!">Questions Fréquentes</a>
                         </li>
                         <li>
                             <a href="#!">Conditions Générales</a>
@@ -279,9 +336,8 @@
     </footer>
 
     <!-- Bootstrap JS scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
